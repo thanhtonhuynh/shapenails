@@ -2,16 +2,13 @@ import { TailwindScreenSizeIndicator } from "@/components/dev/tw-screen-size-ind
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Tangerine } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const tangerine = Tangerine({
+  weight: ["400", "700"],
+  variable: "--font-tangerine",
   subsets: ["latin"],
 });
 
@@ -27,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body className={`${geistSans.variable} ${tangerine.variable} font-geist-sans antialiased`}>
         <div className="relative mx-auto flex min-h-screen w-full max-w-(--breakpoint-2xl) flex-col scroll-smooth">
           <Header />
           <main className="flex flex-1 flex-col">{children}</main>
