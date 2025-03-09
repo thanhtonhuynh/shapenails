@@ -1,3 +1,6 @@
+import { TailwindScreenSizeIndicator } from "@/components/dev/tw-screen-size-indicator";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -24,10 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+        <div className="relative mx-auto flex min-h-screen w-full max-w-(--breakpoint-2xl) flex-col scroll-smooth">
+          <Header />
+          <main className="flex flex-1 flex-col">{children}</main>
+          <Footer />
+        </div>
+        <TailwindScreenSizeIndicator />
       </body>
     </html>
   );
