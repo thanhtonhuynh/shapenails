@@ -57,7 +57,8 @@
 
 :root {
   --background: oklch(96.8% 0.0114 84.58);
-  --foreground: oklch(0.145 0 0);
+  /* --foreground: oklch(0.145 0 0); */
+  --foreground: var(--deepespresso);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -110,11 +111,11 @@
   }
 
   h1 {
-    @apply text-3xl font-bold;
+    @apply font-playfair-display text-3xl font-bold;
   }
 
   h2 {
-    @apply text-2xl font-bold;
+    @apply font-playfair-display text-2xl font-bold;
   }
 
   h3 {
@@ -131,5 +132,15 @@
 
   h6 {
     @apply text-sm font-bold;
+  }
+}
+
+@layer utilities {
+  .clip-trapezoid {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+
+  .clip-trapezoid-reverse {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   }
 }
