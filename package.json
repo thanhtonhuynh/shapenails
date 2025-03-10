@@ -38,9 +38,6 @@
     "typescript": "^5"
   },
   "pnpm": {
-    "ignoredBuiltDependencies": [
-      "sharp"
-    ],
     "onlyBuiltDependencies": [
       "esbuild",
       "sharp"
