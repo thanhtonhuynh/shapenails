@@ -13,6 +13,7 @@ export function ServicesHeader() {
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
+
           <div className="absolute left-1/2 z-20 h-[500px] w-[200px] -translate-x-1/2 translate-y-8 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:left-0 md:z-auto md:-translate-x-0">
             <Image
               src={"/services3.jpg"}
@@ -21,6 +22,7 @@ export function ServicesHeader() {
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
+
           <div className="absolute right-0 z-30 h-[500px] w-[200px] overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
               src={"/services2.jpg"}
@@ -29,6 +31,7 @@ export function ServicesHeader() {
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
+
           <h1 className="absolute top-1/2 left-1/2 z-40 flex w-full -translate-x-1/2 -translate-y-1/2 justify-center px-4 font-extrabold tracking-widest uppercase lg:hidden">
             <span className="bg-olive/50 text-warmsand rounded-xs p-8">Services</span>
           </h1>
