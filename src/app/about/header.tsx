@@ -7,7 +7,7 @@ export function AboutHeader() {
         <div className="relative flex h-[500px] md:justify-center md:gap-8 lg:grid lg:grid-cols-3">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
-              src={"/about1.jpg"}
+              src={"/about1.png"}
               alt="Hero Image"
               fill
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
