@@ -34,7 +34,7 @@ export function AboutHeader() {
           </h1>
         </div>
 
-        <h1 className="text-ivory z-40 hidden items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-wider uppercase lg:flex">
+        <h1 className="text-ivory z-40 hidden items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_0px_rgb(217,207,193,0.5)] lg:flex">
           About Us
         </h1>
       </div>

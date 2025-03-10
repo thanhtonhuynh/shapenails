@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Values() {
   return (
-    <section className="space-y-8 p-4 sm:p-8">
+    <section className="space-y-16 p-4 sm:p-8">
       <div className="text-deepespresso flex flex-col items-center gap-2">
         <h2 className="uppercase">Our Values</h2>
       </div>
@@ -21,13 +21,13 @@ export function Values() {
         <p>Treat yourself to the best - because you deserve nails that make a statement!</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 xl:grid-cols-4">
-        <div className="border-claybrown group relative flex h-40 flex-col items-center justify-center overflow-hidden rounded-xl border border-dashed p-4 shadow-sm">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tl-4xl rounded-br-4xl p-4 shadow-sm">
           <Image
             src={"/about1.jpg"}
             alt="Hero Image"
             fill
-            className="rounded-xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
+            className="rounded-tl-4xl rounded-br-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
           />
           <div className="bg-deepespresso/30 absolute inset-0" />
           <p className="text-ivory z-10 text-center font-semibold uppercase">
@@ -35,12 +35,12 @@ export function Values() {
           </p>
         </div>
 
-        <div className="border-claybrown group relative flex h-40 flex-col items-center justify-center overflow-hidden rounded-xl border border-dashed p-4 shadow-sm">
+        <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tr-4xl rounded-bl-4xl p-4 shadow-sm">
           <Image
             src={"/about2.jpg"}
             alt="Hero Image"
             fill
-            className="rounded-xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
+            className="rounded-tr-4xl rounded-bl-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
           />
           <div className="bg-deepespresso/30 absolute inset-0" />
           <p className="text-ivory z-10 text-center font-semibold uppercase">
@@ -48,12 +48,12 @@ export function Values() {
           </p>
         </div>
 
-        <div className="border-claybrown group relative flex h-40 flex-col items-center justify-center overflow-hidden rounded-xl border border-dashed p-4 shadow-sm">
+        <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tr-4xl rounded-bl-4xl p-4 shadow-sm">
           <Image
             src={"/about3.jpg"}
             alt="Hero Image"
             fill
-            className="rounded-xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
+            className="rounded-tr-4xl rounded-bl-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
           />
           <div className="bg-deepespresso/30 absolute inset-0" />
           <p className="text-ivory z-10 text-center font-semibold uppercase">
@@ -61,12 +61,12 @@ export function Values() {
           </p>
         </div>
 
-        <div className="border-claybrown group relative flex h-40 flex-col items-center justify-center overflow-hidden rounded-xl border border-dashed p-4 shadow-sm">
+        <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tl-4xl rounded-br-4xl p-4 shadow-sm">
           <Image
             src={"/about4.jpg"}
             alt="Hero Image"
             fill
-            className="rounded-xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
+            className="rounded-tl-4xl rounded-br-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
           />
           <div className="bg-deepespresso/30 absolute inset-0" />
           <p className="text-ivory z-10 text-center font-semibold uppercase">
