@@ -24,7 +24,7 @@ export function Values() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tl-4xl rounded-br-4xl p-4 shadow-sm">
           <Image
-            src={"/about1.jpg"}
+            src={"/about1.png"}
             alt="Hero Image"
             fill
             className="rounded-tl-4xl rounded-br-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
@@ -37,7 +37,7 @@ export function Values() {
 
         <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tr-4xl rounded-bl-4xl p-4 shadow-sm">
           <Image
-            src={"/about2.jpg"}
+            src={"/about2.png"}
             alt="Hero Image"
             fill
             className="rounded-tr-4xl rounded-bl-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
@@ -50,7 +50,7 @@ export function Values() {
 
         <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tr-4xl rounded-bl-4xl p-4 shadow-sm">
           <Image
-            src={"/about3.jpg"}
+            src={"/about3.png"}
             alt="Hero Image"
             fill
             className="rounded-tr-4xl rounded-bl-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
@@ -63,7 +63,7 @@ export function Values() {
 
         <div className="group relative flex h-56 flex-col items-center justify-center overflow-hidden rounded-tl-4xl rounded-br-4xl p-4 shadow-sm">
           <Image
-            src={"/about4.jpg"}
+            src={"/about4.png"}
             alt="Hero Image"
             fill
             className="rounded-tl-4xl rounded-br-4xl object-cover transition duration-300 ease-in-out group-hover:scale-110"
