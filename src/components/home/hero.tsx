@@ -7,7 +7,7 @@ export function HomeHero() {
         <div className="relative flex h-[500px] md:justify-center md:gap-8 xl:grid xl:grid-cols-3">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
-              src={"/hero.jpg"}
+              src={"/home1.png"}
               alt="Hero Image"
               fill
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
@@ -16,7 +16,7 @@ export function HomeHero() {
 
           <div className="absolute left-1/2 z-20 h-[500px] w-[200px] -translate-x-1/2 translate-y-8 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:left-0 md:z-auto md:-translate-x-0">
             <Image
-              src={"/home2.jpg"}
+              src={"/home2.png"}
               alt="Hero Image"
               fill
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
@@ -24,7 +24,7 @@ export function HomeHero() {
           </div>
           <div className="absolute right-0 z-30 h-[500px] w-[200px] overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
-              src={"/services2.jpg"}
+              src={"/services2.png"}
               alt="Hero Image"
               fill
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"

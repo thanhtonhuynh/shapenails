@@ -6,7 +6,7 @@ export function AboutIntro() {
     <section className="flex flex-col sm:flex-row">
       <div className="border-deepespresso border-dashed p-4 sm:basis-1/3 sm:border-r sm:p-8">
         <div className="group relative h-[500px]">
-          <Image src={"/about4.jpg"} alt="Hero Image" fill className="rounded-xl object-cover" />
+          <Image src={"/about4.png"} alt="Hero Image" fill className="rounded-xl object-cover" />
           <div className="bg-ivory/10 animate-in fade-in absolute inset-0 hidden rounded-xl transition duration-300 group-hover:block" />
         </div>
       </div>
