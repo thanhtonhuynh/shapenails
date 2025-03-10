@@ -53,6 +53,27 @@
   --color-warmsand: var(--warmsand);
   --color-deepespresso: var(--deepespresso);
   --color-mutedtaupe: var(--mutedtaupe);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 }
 
 :root {
@@ -111,7 +132,7 @@
   }
 
   h1 {
-    @apply font-playfair-display text-3xl font-bold;
+    @apply font-playfair-display text-4xl font-bold;
   }
 
   h2 {
@@ -142,5 +163,10 @@
 
   .clip-trapezoid-reverse {
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px var(--olive); /* olive color */
+    color: transparent;
   }
 }

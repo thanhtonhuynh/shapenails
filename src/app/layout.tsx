@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${playfairDisplay.variable} font-geist-sans antialiased`}
       >
-        <div className="relative mx-auto flex min-h-screen w-full max-w-(--breakpoint-2xl) flex-col scroll-smooth">
+        <div className="relative mx-auto flex min-h-screen flex-col scroll-smooth">
           <Header />
           <main className="flex flex-1 flex-col">{children}</main>
           <Footer />

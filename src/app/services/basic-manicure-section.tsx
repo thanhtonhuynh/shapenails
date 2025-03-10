@@ -1,0 +1,57 @@
+"use client";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { basicManicure } from "@/constants/categories/basic-manicure";
+import { motion } from "motion/react";
+
+export function BasicManicureSection() {
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="mb-8"
+    >
+      <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed p-8 pt-20 pb-12 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <h2 className="bg-olive absolute top-0 left-0 rounded-tl-3xl rounded-br-3xl p-4 px-8 tracking-widest">
+          {basicManicure.title}
+        </h2>
+
+        <Accordion type="multiple">
+          {basicManicure.services.map((item, i) => (
+            <AccordionItem className="border-olive" key={i} value={`item-${i}`}>
+              <AccordionTrigger className="cursor-pointer uppercase">
+                <div className="flex gap-4">
+                  <span className="tracking-wide">{item.title}</span>
+                  <span className="font-normal">$ {item.price}</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>{item.description}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+
+        <div className="space-y-2">
+          <h5 className="font-medium uppercase">Add-ons</h5>
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
+            {basicManicure.addOns &&
+              basicManicure.addOns.map((item, i) => (
+                <div key={i} className="flex gap-4 text-sm">
+                  <span className="font-medium">{item.title}</span>
+                  <span>$ {item.price}+</span>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        <div className="bg-olive absolute right-0 bottom-0 size-10 rounded-tl-3xl rounded-br-3xl transition duration-300 group-hover:scale-125" />
+      </section>
+    </motion.section>
+  );
+}
