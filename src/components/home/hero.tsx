@@ -13,6 +13,7 @@ export function HomeHero() {
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
+
           <div className="absolute left-1/2 z-20 h-[500px] w-[200px] -translate-x-1/2 translate-y-8 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:left-0 md:z-auto md:-translate-x-0">
             <Image
               src={"/home2.jpg"}
