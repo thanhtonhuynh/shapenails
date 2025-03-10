@@ -7,7 +7,7 @@ export function HomeHero() {
         <div className="relative flex h-[500px] md:justify-center md:gap-8 xl:grid xl:grid-cols-3">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
-              src={"/home1.jpg"}
+              src={"/hero.jpg"}
               alt="Hero Image"
               fill
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
