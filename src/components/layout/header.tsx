@@ -5,6 +5,7 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import { DesktopNav } from "./desktop-nav";
 import { Logo } from "./logo";
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
   const { scrollY } = useScroll();
@@ -25,6 +26,7 @@ export function Header() {
       >
         <Logo />
         <DesktopNav />
+        <MobileNav />
       </div>
     </header>
   );
