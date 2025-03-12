@@ -1,66 +1,93 @@
 import { MapPinHouse, PhoneOutgoing } from "lucide-react";
 import Link from "next/link";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { BookNowButton } from "../book-now-button";
 import { Button } from "../ui/button";
 import { Logo } from "./logo";
 
 export function Footer() {
   return (
-    <footer className="mx-auto my-4 w-full max-w-(--breakpoint-2xl) px-4">
-      <div className="border-claybrown flex w-full items-center justify-between gap-4 rounded-xl border p-4 shadow-sm">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-          <div className="flex flex-col items-start gap-2">
-            <Logo />
-            <Button asChild variant={"ghost"} className="group transition duration-300">
-              <Link target="blank" href="https://www.facebook.com/shapenailsmedford">
-                <FiFacebook className="size-4" />
-                <span className="opacity-0 transition duration-300 group-hover:opacity-100">
-                  Shape Nails
-                </span>
-              </Link>
-            </Button>
-            <Button asChild variant={"ghost"} className="group transition duration-300">
-              <Link target="blank" href="https://www.instagram.com/shapenail_studio/">
-                <FiInstagram className="size-4" />
-                <span className="opacity-0 transition duration-300 group-hover:opacity-100">
-                  shapenail_studio
-                </span>
-              </Link>
-            </Button>
-          </div>
+    <footer className="bg-warmsand mt-16 flex flex-col gap-16">
+      <section className="bg-claybrown text-ivory flex h-[350px] flex-col items-center justify-center space-y-6 px-4 [clip-path:var(--clip-ellipse)] sm:[clip-path:var(--clip-ellipse-sm)]">
+        <div className="space-y-2 text-center">
+          <h2 className="text-xl tracking-widest uppercase sm:text-2xl">
+            Book Your Appoinment Today!
+          </h2>
+          <p className="text-sm font-medium">
+            Ready for a little <span className="font-playfair-display italic">'me time' </span>?
+            We've got a spot just for you!
+          </p>
+        </div>
 
-          <div className="flex flex-col gap-1">
-            <h5>Business Hours</h5>
-            <div>
-              <p className="text-sm">
-                <span className="font-semibold">Mon - Sat:</span> 9:30 AM - 7:30 PM
-              </p>
-              <p className="text-sm">
-                <span className="font-semibold">Sunday:</span> Closed
-              </p>
+        <BookNowButton />
+      </section>
+
+      <section className="mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col gap-8 px-4 sm:px-8">
+        <div className="mb-4 flex flex-col items-center gap-4">
+          <Logo size="lg" />
+          <p className="font-playfair-display text-center text-sm font-medium italic">
+            Well-shaped nails are not just a detail, they are a statement.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 lg:flex lg:justify-center lg:gap-32">
+          <div className="flex flex-col gap-4">
+            <h5 className="font-playfair-display tracking-wide uppercase">Business Hours</h5>
+            <div className="space-y-2 text-sm font-medium tracking-wide uppercase">
+              <p className="py-0.5">Mon-Sat: 9:30AM to 7:30PM</p>
+              <p className="py-0.5">Sunday: Closed</p>
             </div>
           </div>
 
-          <div className="flex flex-col items-start gap-2">
-            <Button className="!px-0" asChild variant={"link"}>
-              <Link href="tel:+18579998268">
-                <PhoneOutgoing className="size-4" />
-                +1 (857) 999 - 8268
-              </Link>
-            </Button>
-            <Button className="!px-0" asChild variant={"link"}>
-              <Link target="blank" href="https://maps.app.goo.gl/KXA6y7j7q6aSoRe66">
-                <MapPinHouse className="size-4" />
-                243 Boston Ave, Medford, MA 02155
-              </Link>
-            </Button>
+          <div className="flex flex-col gap-4">
+            <h5 className="font-playfair-display tracking-wide uppercase">Contact Information</h5>
+            <div className="flex flex-col items-start gap-2 tracking-wide uppercase">
+              <Button className="h-fit !px-0 py-0.5" asChild variant={"link"}>
+                <Link href="tel:+18579998268">
+                  <PhoneOutgoing className="size-4" />
+                  +1 (857) 999 - 8268
+                </Link>
+              </Button>
+              <Button className="h-fit !px-0 py-0.5" asChild variant={"link"}>
+                <Link target="blank" href="https://maps.app.goo.gl/KXA6y7j7q6aSoRe66">
+                  <MapPinHouse className="size-4" />
+                  243 Boston Ave, Medford, MA 02155
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h5 className="font-playfair-display tracking-wide uppercase">Social Media</h5>
+            <div className="flex flex-col items-start gap-2 tracking-wide uppercase">
+              <Button asChild variant={"link"} className="h-fit !px-0 py-0.5">
+                <Link target="blank" href="https://www.facebook.com/shapenailsmedford">
+                  <FiFacebook className="size-4" />
+                  <span>Shape Nails</span>
+                </Link>
+              </Button>
+              <Button asChild variant={"link"} className="h-fit !px-0 py-0.5">
+                <Link target="blank" href="https://www.instagram.com/shapenail_studio/">
+                  <FiInstagram className="size-4" />
+                  <span>shapenail_studio</span>
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className="text-muted-foreground self-center text-sm">
-          &copy; {new Date().getFullYear()}, Shape Nails. All rights reserved.
-        </div>
-      </div>
+      <section className="text-charcoal mb-16 flex flex-col items-center justify-center gap-1 text-sm">
+        <p>Copyright &copy; {new Date().getFullYear()}, The Shape Nails. All rights reserved.</p>
+        <p className="flex items-center gap-1">
+          <span>Designed by</span>
+          <Button variant={"link"} className="text-charcoal px-0">
+            <Link target="blank" href={"https://tonhuynh.ca"}>
+              Ton Huynh
+            </Link>
+          </Button>
+        </p>
+      </section>
     </footer>
   );
 }

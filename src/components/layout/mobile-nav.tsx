@@ -1,6 +1,6 @@
 "use client";
 
-import { navItems } from "@/constants";
+import { mobileNavItems } from "@/constants";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
 import Link from "next/link";
@@ -59,7 +59,7 @@ export function MobileNav() {
   }, [active]);
 
   return (
-    <div className="relative h-9 sm:hidden">
+    <div className="relative h-9 md:hidden">
       <motion.div
         className="bg-warmsand absolute rounded-md"
         variants={containerVariants}
@@ -84,7 +84,7 @@ function Nav({
   return (
     <div className="flex h-full flex-col justify-center px-8">
       <ul className="flex flex-col gap-8">
-        {navItems.map((navItem, i) => (
+        {mobileNavItems.map((navItem, i) => (
           <li key={i} className="perspective-[120px] perspective-origin-bottom">
             <motion.div
               custom={i}
@@ -127,7 +127,7 @@ function MenuButton({
         initial={false}
         onClick={() => setActive(!active)}
         className={cn(
-          "bg-warmsand hover:bg-accent relative size-9 cursor-pointer rounded-md shadow-lg transition-colors",
+          "bg-warmsand hover:bg-ivory relative size-9 cursor-pointer rounded-md shadow-lg transition-colors",
         )}
         animate={active ? "open" : "closed"}
       >
