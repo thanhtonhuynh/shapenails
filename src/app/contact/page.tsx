@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPinHouse, PhoneOutgoing } from "lucide-react";
+import { Mail, MapPinHouse, PhoneOutgoing } from "lucide-react";
 import Link from "next/link";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { ContactHero } from "./hero";
@@ -9,8 +9,8 @@ export default function Page() {
     <>
       <ContactHero />
 
-      <main className="mx-auto w-full max-w-(--breakpoint-2xl) space-y-8">
-        <section className="space-y-4 px-4 sm:px-8">
+      <main className="mx-auto w-full max-w-(--breakpoint-2xl) space-y-16">
+        <section className="space-y-6 px-4 sm:px-8">
           <h2 className="uppercase">How can we help you today?</h2>
           <div>
             <p>
@@ -40,6 +40,13 @@ export default function Page() {
                 <Link href="tel:+18579998268">
                   <PhoneOutgoing className="size-4" />
                   +1 (857) 999 - 8268
+                </Link>
+              </Button>
+
+              <Button className="text-ivory h-fit !px-0 py-0.5" asChild variant={"link"}>
+                <Link href="mailto:theshapenails@gmail.com">
+                  <Mail className="size-4" />
+                  theshapenails@gmail.com
                 </Link>
               </Button>
 
