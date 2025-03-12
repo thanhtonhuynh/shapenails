@@ -29,12 +29,12 @@ export function ContactHero() {
               className="border-warmsand rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
-          <h1 className="text-ivory absolute top-1/2 left-1/2 z-40 flex w-full -translate-x-1/2 -translate-y-1/2 justify-center px-4 font-extrabold tracking-wider uppercase lg:hidden">
-            <span className="bg-claybrown/70 rounded-xs p-8">Contact Us</span>
+          <h1 className="text-warmsand absolute top-1/2 left-1/2 z-40 flex w-full -translate-x-1/2 -translate-y-1/2 justify-center px-4 text-center font-extrabold tracking-widest uppercase lg:hidden">
+            <span className="rounded-xs drop-shadow-[3px_3px_2px_rgb(59,47,47)]">Contact Us</span>
           </h1>
         </div>
 
-        <h1 className="text-ivory z-40 hidden items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_0px_rgb(217,207,193,0.5)] lg:flex">
+        <h1 className="text-ivory z-40 hidden items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_1px_rgb(217,207,193,0.5)] lg:flex">
           Contact Us
         </h1>
       </div>

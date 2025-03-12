@@ -4,8 +4,8 @@ import { BookNowButton } from "../book-now-button";
 export function HomeHero() {
   return (
     <header className="clip-trapezoid bg-claybrown p-8 pt-28 pb-32 shadow-sm">
-      <div className="relative mx-auto w-full max-w-(--breakpoint-2xl) p-8 xl:grid xl:grid-cols-2">
-        <div className="relative flex h-[500px] md:justify-center md:gap-8 xl:grid xl:grid-cols-3">
+      <div className="relative mx-auto w-full max-w-(--breakpoint-2xl) xl:grid xl:grid-cols-2">
+        <div className="relative flex h-[500px] md:justify-center md:gap-8">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
               src={"/home1.png"}
@@ -34,14 +34,14 @@ export function HomeHero() {
         </div>
 
         <div className="absolute top-1/2 left-1/2 z-40 -translate-x-1/2 -translate-y-1/2 xl:hidden">
-          <div className="text-ivory bg-deepespresso/40 mx-auto flex w-full max-w-xl min-w-xs flex-col items-center gap-4 rounded-xs p-8 uppercase sm:min-w-md">
-            <h1 className="flex flex-col items-center gap-1 font-extrabold tracking-widest sm:flex-row sm:items-start sm:gap-2.5">
+          <div className="text-ivory mx-auto flex w-full max-w-xl min-w-xs flex-col items-center gap-4 rounded-xs uppercase sm:min-w-lg">
+            <h1 className="flex flex-col items-center gap-1 font-extrabold tracking-widest drop-shadow-[3px_3px_2px_rgb(59,47,47)] sm:flex-row sm:items-start sm:gap-2.5">
               <span>The</span>
-              <span>Shape</span>
-              <span>Nails</span>
+              <span>Shape Nails</span>
+              {/* <span>Nails</span> */}
             </h1>
 
-            <p className="font-playfair-display text-center font-medium tracking-widest">
+            <p className="font-playfair-display text-center font-medium tracking-widest drop-shadow-[3px_3px_2px_rgb(59,47,47)]">
               Where Stories Shaped Through Stunning Nails
             </p>
             <div className="mt-2 md:hidden">

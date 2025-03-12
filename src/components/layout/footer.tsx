@@ -77,7 +77,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="text-charcoal mb-16 flex flex-col items-center justify-center gap-1 text-sm">
+      <section className="text-charcoal mb-8 flex flex-col items-center justify-center gap-1 text-sm">
         <p>Copyright &copy; {new Date().getFullYear()}, The Shape Nails. All rights reserved.</p>
         <p className="flex items-center gap-1">
           <span>Designed by</span>
