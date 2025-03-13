@@ -67,7 +67,7 @@ export function LightboxGallery() {
             key={i}
             className="border-warmsand mb-8 cursor-pointer break-inside-avoid overflow-hidden rounded-xl border shadow-md"
             onClick={() => openLightbox(i)}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ opacity: 0.9 }}
             transition={{ duration: 0.3 }}
