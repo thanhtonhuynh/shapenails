@@ -1,0 +1,68 @@
+[
+  {
+    "src": "/about1.png",
+    "alt": "Gallery image about1.png",
+    "width": 2134,
+    "height": 2138
+  },
+  {
+    "src": "/about2.png",
+    "alt": "Gallery image about2.png",
+    "width": 936,
+    "height": 1414
+  },
+  {
+    "src": "/about3.png",
+    "alt": "Gallery image about3.png",
+    "width": 1474,
+    "height": 1812
+  },
+  {
+    "src": "/about4.png",
+    "alt": "Gallery image about4.png",
+    "width": 1644,
+    "height": 2184
+  },
+  {
+    "src": "/about5.png",
+    "alt": "Gallery image about5.png",
+    "width": 1498,
+    "height": 2188
+  },
+  {
+    "src": "/hero.jpg",
+    "alt": "Gallery image hero.jpg",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "src": "/home1.png",
+    "alt": "Gallery image home1.png",
+    "width": 1784,
+    "height": 2198
+  },
+  {
+    "src": "/home2.png",
+    "alt": "Gallery image home2.png",
+    "width": 1444,
+    "height": 2160
+  },
+  {
+    "src": "/services1.png",
+    "alt": "Gallery image services1.png",
+    "width": 1450,
+    "height": 2192
+  },
+  {
+    "src": "/services2.png",
+    "alt": "Gallery image services2.png",
+    "width": 1452,
+    "height": 2194
+  },
+  {
+    "src": "/services3.png",
+    "alt": "Gallery image services3.png",
+    "width": 1468,
+    "height": 2186
+  }
+]

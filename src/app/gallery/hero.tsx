@@ -3,8 +3,8 @@ import Image from "next/image";
 export function GalleryHero() {
   return (
     <header className="clip-trapezoid bg-mutedtaupe mb-16 p-8 pt-28 pb-32 shadow-sm">
-      <div className="mx-auto w-full max-w-(--breakpoint-2xl) p-8 lg:grid lg:grid-cols-2">
-        <div className="relative flex h-[500px] md:justify-center md:gap-8 lg:grid lg:grid-cols-3">
+      <div className="mx-auto w-full max-w-(--breakpoint-2xl) lg:flex">
+        <div className="relative flex h-[500px] flex-1 md:justify-center md:gap-8 xl:gap-16">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
             <Image
               src={"/about1.png"}
@@ -34,7 +34,7 @@ export function GalleryHero() {
           </h1>
         </div>
 
-        <h1 className="text-charcoal z-40 hidden items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_1px_rgba(59,47,47,0.5)] lg:flex">
+        <h1 className="text-terracotta z-40 hidden flex-1 items-center justify-center rounded-xl p-8 text-4xl font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_1px_rgba(248,244,236,0.8)] lg:flex">
           Gallery
         </h1>
       </div>
