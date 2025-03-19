@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Manicure",
+    "image": "/services1.png"
+  },
+  {
+    "title": "Pedicure",
+    "image": "/services2.png"
+  },
+  {
+    "title": "Dip Powder",
+    "image": "/services3.png"
+  },
+  {
+    "title": "Gel X",
+    "image": "/about1.png"
+  },
+  {
+    "title": "Acrylic",
+    "image": "/about2.png"
+  },
+  {
+    "title": "BIAB",
+    "image": "/about3.png"
+  },
+  {
+    "title": "Nail Art",
+    "image": "/about4.png"
+  },
+  {
+    "title": "Waxing",
+    "image": "/about5.png"
+  }
+]

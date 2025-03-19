@@ -3,7 +3,7 @@ import { BookNowButton } from "../book-now-button";
 
 export function HomeHero() {
   return (
-    <header className="clip-trapezoid bg-claybrown p-8 pt-28 pb-32 shadow-sm">
+    <header className="clip-trapezoid bg-claybrown mb-16 p-8 pt-28 pb-32 shadow-sm">
       <div className="relative mx-auto w-full max-w-(--breakpoint-2xl) xl:grid xl:grid-cols-2">
         <div className="relative flex h-[500px] md:justify-center md:gap-8">
           <div className="absolute z-10 h-[500px] w-[200px] translate-y-16 overflow-hidden rounded-t-[100px] rounded-b-3xl shadow-sm md:relative md:z-auto">
