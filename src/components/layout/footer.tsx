@@ -33,7 +33,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h5 className="font-playfair-display tracking-wide uppercase">Business Hours</h5>
             <div className="space-y-2 text-sm font-medium tracking-wide uppercase">
-              <p className="py-0.5">Mon-Sat: 9:30AM to 7:30PM</p>
+              <p className="py-0.5">Mon-Sat: 9:30AM to 7:00PM</p>
               <p className="py-0.5">Sunday: Closed</p>
             </div>
           </div>
