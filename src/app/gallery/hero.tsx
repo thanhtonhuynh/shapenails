@@ -10,7 +10,7 @@ export function GalleryHero() {
               src={"/about1.png"}
               alt="Hero Image"
               fill
-              className="border-terracotta rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
 
@@ -19,7 +19,7 @@ export function GalleryHero() {
               src={"/about2.png"}
               alt="Hero Image"
               fill
-              className="border-terracotta rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
 
@@ -28,7 +28,7 @@ export function GalleryHero() {
               src={"/about3.png"}
               alt="Hero Image"
               fill
-              className="border-terracotta rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
         </div>
@@ -37,7 +37,7 @@ export function GalleryHero() {
           <span className="drop-shadow-[3px_3px_2px_rgb(59,47,47)]">Gallery</span>
         </h1>
 
-        <h1 className="text-ivory hidden basis-1/3 items-center justify-center font-extrabold tracking-widest uppercase drop-shadow-[3px_3px_2px_rgb(59,47,47)] lg:flex">
+        <h1 className="text-shadow-espresso hidden basis-1/3 items-center justify-center font-extrabold tracking-widest uppercase lg:flex">
           Gallery
         </h1>
       </div>

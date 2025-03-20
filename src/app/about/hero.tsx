@@ -37,7 +37,7 @@ export function AboutHeader() {
           <span className="drop-shadow-[3px_3px_2px_rgb(59,47,47)]">About Us</span>
         </h1>
 
-        <h1 className="text-ivory hidden basis-1/3 items-center justify-center font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_1px_rgb(217,207,193,0.5)] lg:flex">
+        <h1 className="text-ivory text-shadow-espresso hidden basis-1/3 items-center justify-center font-extrabold tracking-widest uppercase lg:flex">
           About Us
         </h1>
       </div>

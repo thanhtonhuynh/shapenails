@@ -214,4 +214,8 @@
   .clip-trapezoid-reverse {
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   }
+
+  .text-shadow-espresso {
+    text-shadow: 4px 4px 1px rgba(59, 47, 47, 0.5);
+  }
 }

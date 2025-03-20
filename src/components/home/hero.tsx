@@ -5,13 +5,13 @@ export function HomeHero() {
   return (
     <header className="clip-trapezoid bg-warmsand px-4 pt-28 pb-40 shadow-sm sm:px-8">
       <div className="relative mx-auto w-full max-w-(--breakpoint-2xl) lg:flex">
-        <div className="relative flex flex-1 gap-4 sm:gap-8 md:justify-center xl:gap-16">
+        <div className="relative flex flex-1 gap-4 sm:gap-8 md:justify-center lg:gap-4 xl:gap-16">
           <div className="relative h-[300px] flex-1 translate-y-16 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[250px] lg:h-[450px]">
             <Image
               src={"/home1.png"}
               alt="Hero Image"
               fill
-              className="border-claybrown rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
 
@@ -20,7 +20,7 @@ export function HomeHero() {
               src={"/home2.png"}
               alt="Hero Image"
               fill
-              className="border-claybrown rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
 
@@ -29,7 +29,7 @@ export function HomeHero() {
               src={"/services2.png"}
               alt="Hero Image"
               fill
-              className="border-claybrown rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
+              className="border-deepespresso rounded-t-[100px] rounded-b-3xl border border-dashed object-cover"
             />
           </div>
         </div>
@@ -49,8 +49,8 @@ export function HomeHero() {
           </div>
         </div>
 
-        <div className="text-claybrown hidden flex-1 items-center justify-center gap-6 uppercase lg:flex lg:flex-col lg:items-center">
-          <h1 className="font-extrabold tracking-widest uppercase drop-shadow-[4px_4px_1px_rgba(59,47,47,0.2)]">
+        <div className="hidden flex-1 items-center justify-center gap-6 uppercase lg:flex lg:flex-col lg:items-center">
+          <h1 className="text-shadow-espresso font-extrabold tracking-widest uppercase">
             Shape Nails
           </h1>
           <p className="font-playfair-display text-center font-medium tracking-widest">
