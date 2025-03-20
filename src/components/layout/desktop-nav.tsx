@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export function DesktopNav() {
   return (
-    <nav className="hidden md:block">
+    <nav className="hidden lg:block">
       <ul className="flex lg:gap-4 xl:gap-8">
         {navItems.map((item, i) => (
           <li key={i}>

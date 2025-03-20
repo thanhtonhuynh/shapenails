@@ -59,7 +59,7 @@ export function MobileNav() {
   }, [active]);
 
   return (
-    <div className="relative h-9 md:hidden">
+    <div className="relative h-9 lg:hidden">
       <motion.div
         className="bg-warmsand absolute rounded-md"
         variants={containerVariants}

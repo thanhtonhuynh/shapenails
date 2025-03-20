@@ -10,6 +10,7 @@ export const navItems = [
   { title: "About Us", href: "/about" },
   { title: "Services", href: "/services" },
   { title: "Gallery", href: "/gallery" },
+  { title: "Gift Cards", href: "/gift-card" },
   { title: "Contact", href: "/contact" },
 ];
 

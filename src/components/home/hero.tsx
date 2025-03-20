@@ -43,7 +43,7 @@ export function HomeHero() {
             <p className="font-playfair-display bg-charcoal/20 rounded-md p-1 text-center font-medium tracking-widest">
               Shaping Stories Through Stunning Nails
             </p>
-            <div className="mt-2 md:hidden">
+            <div className="mt-2 lg:hidden">
               <BookNowButton />
             </div>
           </div>
