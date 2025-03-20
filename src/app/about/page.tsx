@@ -1,4 +1,4 @@
-import { AboutHeader } from "./header";
+import { AboutHeader } from "./hero";
 import { AboutIntro } from "./intro";
 import { Mission } from "./mission";
 import { Values } from "./values";
