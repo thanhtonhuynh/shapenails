@@ -18,7 +18,7 @@ export function ServiceCarousel() {
               key={i}
               className="relative sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
             >
-              <div className="hover:border-primary relative h-96 rounded-lg border transition duration-300 ease-in-out">
+              <div className="hover:border-primary relative h-[500px] rounded-lg border transition duration-300 ease-in-out">
                 <Image
                   src={service.image}
                   alt={service.title}

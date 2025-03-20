@@ -7,7 +7,7 @@ import { Logo } from "./logo";
 
 export function Footer() {
   return (
-    <footer className="bg-warmsand mt-16 flex flex-col gap-16">
+    <footer className="bg-warmsand flex flex-col gap-16">
       <section className="bg-claybrown text-ivory flex h-[350px] flex-col items-center justify-center space-y-6 px-4 [clip-path:var(--clip-ellipse)] sm:[clip-path:var(--clip-ellipse-sm)]">
         <div className="space-y-2 text-center">
           <h2 className="text-xl tracking-widest uppercase sm:text-2xl">
