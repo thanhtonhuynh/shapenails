@@ -15,7 +15,7 @@ export function AboutUs() {
         </div>
 
         <div className="col-span-3 flex flex-col justify-center gap-4 place-self-center p-8">
-          <h2 className="text-claybrown text-3xl tracking-widest uppercase">About Shape Nails</h2>
+          <h2 className="text-3xl tracking-widest uppercase">About Shape Nails</h2>
 
           <div className="space-y-1 leading-7">
             <p>
@@ -41,7 +41,7 @@ export function AboutUs() {
         </div>
 
         <div className="flex flex-col justify-center gap-4 place-self-center p-8 md:basis-3/4">
-          <h2 className="text-claybrown text-xl tracking-wider uppercase">
+          <h2 className="text-xl tracking-wider uppercase">
             Shaping Stories Through Stunning Nails
           </h2>
 

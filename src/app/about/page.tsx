@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <AboutHeader />
 
-      <main className="mx-auto mt-16 w-full max-w-(--breakpoint-2xl) space-y-8">
+      <main className="mx-auto my-16 w-full max-w-(--breakpoint-2xl) space-y-8">
         <AboutIntro />
         <Mission />
         <Values />

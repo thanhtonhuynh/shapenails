@@ -174,7 +174,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "text-claybrown border-mutedtaupe hover:text-claybrown hover:border-claybrown absolute size-8 rounded-full transition duration-300",
+        "absolute size-8 rounded-full transition duration-300",
         orientation === "horizontal"
           ? "top-1/2 -left-12 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -205,7 +205,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "text-claybrown border-mutedtaupe hover:text-claybrown hover:border-claybrown absolute size-8 rounded-full transition duration-300",
+        "absolute size-8 rounded-full transition duration-300",
         orientation === "horizontal"
           ? "top-1/2 -right-12 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

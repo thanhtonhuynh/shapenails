@@ -9,7 +9,7 @@ export default function Page() {
     <>
       <ContactHero />
 
-      <main className="mx-auto w-full max-w-(--breakpoint-2xl) space-y-16">
+      <main className="mx-auto my-16 w-full max-w-(--breakpoint-2xl) space-y-16">
         <section className="space-y-6 px-4 sm:px-8">
           <h2 className="uppercase">How can we help you today?</h2>
           <div>

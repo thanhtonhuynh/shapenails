@@ -18,16 +18,17 @@ export function ServiceCarousel() {
               key={i}
               className="relative sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
             >
-              <div className="hover:border-primary relative h-[500px] rounded-lg border transition duration-300 ease-in-out">
+              <div className="group relative mb-1 h-[500px] overflow-hidden rounded-lg shadow-sm select-none">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover transition duration-300 ease-in-out group-hover:scale-[102%] group-hover:opacity-90"
                   sizes="(min-width: 1280px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
                 />
-                <div className="absolute bottom-[5%] flex w-full justify-center rounded-lg">
-                  <h6 className="bg-warmsand/75 text-deepespresso rounded-full px-4 py-2 font-medium tracking-wide uppercase">
+
+                <div className="absolute bottom-[5%] flex w-full justify-center">
+                  <h6 className="bg-warmsand/75 text-deepespresso rounded-full px-8 py-4 font-semibold tracking-wide uppercase">
                     {service.title}
                   </h6>
                 </div>
@@ -36,8 +37,8 @@ export function ServiceCarousel() {
           );
         })}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="text-claybrown border-mutedtaupe hover:text-claybrown hover:border-claybrown hover:scale-110" />
+      <CarouselNext className="text-claybrown border-mutedtaupe hover:text-claybrown hover:border-claybrown hover:scale-110" />
     </Carousel>
   );
 }

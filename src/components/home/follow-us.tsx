@@ -7,8 +7,8 @@ export function FollowUs() {
   return (
     <section className="px-4 py-32 sm:px-8">
       <div className="mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col gap-8">
-        <div className="flex flex-col gap-8 sm:items-center">
-          <h2 className="text-claybrown flex flex-col gap-1 text-3xl tracking-widest uppercase sm:flex-row sm:gap-2">
+        <div className="flex flex-col items-center gap-8">
+          <h2 className="flex flex-col gap-1 text-3xl tracking-widest uppercase sm:flex-row sm:gap-2">
             <span>Stay Connected.</span>
             <span>Get Inspired.</span>
           </h2>
