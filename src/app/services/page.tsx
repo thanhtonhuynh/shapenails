@@ -4,7 +4,7 @@ import { BiabGelSection } from "./biab-gel-section";
 import { DippingPowderSection } from "./dipping-powder-section";
 import { GelManicureSection } from "./gel-manicure-section";
 import { GelXSection } from "./gelX-section";
-import { ServicesHeader } from "./header";
+import { ServicesHeader } from "./hero";
 import { KidsSection } from "./kids-section";
 import { PedicureSection } from "./pedicure-section";
 import { RemovalSection } from "./removal-section";
