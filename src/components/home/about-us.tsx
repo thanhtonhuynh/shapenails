@@ -3,8 +3,8 @@ import { StoreName } from "../store-name";
 
 export function AboutUs() {
   return (
-    <section className="flex flex-col px-4 py-16 sm:px-8">
-      <div className="mx-auto grid max-w-(--breakpoint-2xl) grid-cols-1 md:grid-cols-4 md:gap-8">
+    <section className="flex flex-col gap-8 px-4 py-16 sm:px-8">
+      <div className="mx-auto grid max-w-(--breakpoint-2xl) grid-cols-1 gap-y-8 md:grid-cols-4 md:gap-8">
         <div className="relative h-[300px] md:h-[400px]">
           <Image
             src={"/services1.png"}
@@ -14,8 +14,8 @@ export function AboutUs() {
           />
         </div>
 
-        <div className="col-span-3 flex flex-col justify-center gap-4 place-self-center p-8">
-          <h2 className="text-3xl tracking-widest uppercase">About Shape Nails</h2>
+        <div className="col-span-3 flex flex-col justify-center gap-4 place-self-center">
+          <h2 className="text-2xl tracking-widest uppercase md:text-3xl">About Shape Nails</h2>
 
           <div className="space-y-1 leading-7">
             <p>
@@ -30,7 +30,7 @@ export function AboutUs() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-(--breakpoint-2xl) flex-col md:flex-row-reverse md:gap-8">
+      <div className="mx-auto flex max-w-(--breakpoint-2xl) flex-col gap-y-8 md:flex-row-reverse md:gap-8">
         <div className="relative h-[300px] md:h-[300px] md:basis-1/4">
           <Image
             src={"/services2.png"}
@@ -40,8 +40,8 @@ export function AboutUs() {
           />
         </div>
 
-        <div className="flex flex-col justify-center gap-4 place-self-center p-8 md:basis-3/4">
-          <h2 className="text-xl tracking-wider uppercase">
+        <div className="flex flex-col justify-center gap-4 place-self-center md:basis-3/4">
+          <h2 className="text-base tracking-wide uppercase md:text-xl">
             Shaping Stories Through Stunning Nails
           </h2>
 

@@ -7,7 +7,7 @@ export function Services() {
   return (
     <section className="bg-warmsand flex flex-col gap-8 px-4 py-16 sm:px-8">
       <div className="flex flex-col items-center gap-4">
-        <h2 className="text-center text-3xl tracking-widest uppercase">Our Services</h2>
+        <h2 className="text-center text-2xl tracking-widest uppercase md:text-3xl">Our Services</h2>
         <p className="text-sm">Elevate your look, tell your story with our premium offerings</p>
       </div>
 

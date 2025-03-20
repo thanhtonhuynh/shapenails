@@ -4,7 +4,7 @@ export function SeasonalCollection() {
   return (
     <section className="bg-ivory flex flex-col gap-8 p-8 px-4 pb-16 sm:px-8">
       <div className="flex flex-col items-center gap-4">
-        <h2 className="text-center text-3xl tracking-widest uppercase">
+        <h2 className="text-center text-2xl tracking-widest uppercase md:text-3xl">
           Spring Awakening Collection
         </h2>
         <p className="text-sm">
