@@ -1,6 +1,5 @@
+import { socialLinks } from "@/constants";
 import Link from "next/link";
-import { FiFacebook, FiInstagram } from "react-icons/fi";
-import { IoLogoTiktok } from "react-icons/io5";
 import { Button } from "../ui/button";
 
 export function FollowUs() {
@@ -22,38 +21,19 @@ export function FollowUs() {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 text-sm font-medium tracking-wide uppercase md:flex-row md:gap-8">
-          <Button
-            asChild
-            variant={"outline"}
-            className="border-claybrown hover:bg-claybrown hover:text-ivory transition duration-300 hover:scale-105"
-          >
-            <Link target="blank" href="https://www.facebook.com/shapenailsmedford">
-              <FiFacebook className="size-4" />
-              <span>Shape Nails</span>
-            </Link>
-          </Button>
-
-          <Button
-            asChild
-            variant={"outline"}
-            className="border-claybrown hover:bg-claybrown hover:text-ivory transition duration-300 hover:scale-105"
-          >
-            <Link target="blank" href="https://www.instagram.com/shapenailsmedford/">
-              <FiInstagram className="size-4" />
-              <span>shapenailsmedford</span>
-            </Link>
-          </Button>
-
-          <Button
-            asChild
-            variant={"outline"}
-            className="border-claybrown hover:bg-claybrown hover:text-ivory transition duration-300 hover:scale-105"
-          >
-            <Link target="blank" href="https://www.tiktok.com/@shapenailsmedford">
-              <IoLogoTiktok className="size-4" />
-              <span>shapenailsmedford</span>
-            </Link>
-          </Button>
+          {socialLinks.map((link, i) => (
+            <Button
+              key={i}
+              asChild
+              variant={"outline"}
+              className="border-claybrown hover:bg-claybrown hover:text-ivory transition duration-300 hover:scale-105"
+            >
+              <Link target="blank" href={link.href}>
+                <link.icon className="size-4" />
+                <span>{link.title}</span>
+              </Link>
+            </Button>
+          ))}
         </div>
       </div>
     </section>
