@@ -1,9 +1,9 @@
 "use client";
 
 import { biabGel } from "@/constants/categories/biab-gel";
-import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { CornerPill } from "./reusables/corner-pill";
+import { ServiceAddOns } from "./reusables/service-addons";
 
 export function BiabGelSection() {
   return (
@@ -34,20 +34,7 @@ export function BiabGelSection() {
             ))}
           </div>
 
-          <div className="mt-2 space-y-3">
-            <h5 className="border-olive border-b font-bold uppercase">Add-ons</h5>
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
-              {biabGel.addOns &&
-                biabGel.addOns.map((item, i) => (
-                  <div key={i} className="flex gap-4 text-sm">
-                    <span className={cn("font-medium", item.bold && "font-bold")}>
-                      {item.title}
-                    </span>
-                    <span>$ {item.price}+</span>
-                  </div>
-                ))}
-            </div>
-          </div>
+          <ServiceAddOns color="olive" addOns={biabGel.addOns} />
         </div>
 
         <CornerPill position="right" color="olive" />
