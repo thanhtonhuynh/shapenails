@@ -1,6 +1,7 @@
 import { TailwindScreenSizeIndicator } from "@/components/dev/tw-screen-size-indicator";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
@@ -46,6 +47,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <TailwindScreenSizeIndicator />
+        <Analytics />
       </body>
     </html>
   );
