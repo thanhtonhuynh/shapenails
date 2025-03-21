@@ -19,7 +19,7 @@ export function AboutUs() {
 
           <div className="space-y-1 leading-7">
             <p>
-              Welcome to the <StoreName />, where beauty, creativity, and relaxation come together.
+              Welcome to <StoreName />, where beauty, creativity, and relaxation come together.
             </p>
             <p>
               We believe that well-shaped nails are more than a detail - they're a statement.

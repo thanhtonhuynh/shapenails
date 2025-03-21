@@ -13,7 +13,7 @@ export function AboutIntro() {
 
       <div className="flex flex-col items-center sm:basis-2/3">
         <div className="border-deepespresso text-deepespresso flex w-full flex-col items-center justify-center gap-2 border-dashed p-4 sm:basis-1/2 sm:border-b sm:p-8">
-          <h2 className="uppercase">Welcome to The Shape Nails</h2>
+          <h2 className="uppercase">Welcome to Shape Nails</h2>
           <p className="font-playfair-display">
             where your beauty and relaxation are our top priorities
           </p>

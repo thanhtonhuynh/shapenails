@@ -24,7 +24,7 @@ export function PedicureSection() {
           {pedicure.title}
         </h2>
 
-        <p className="flex items-center gap-2 text-sm font-medium text-red-500">
+        <p className="text-terracotta flex items-center gap-2 text-sm font-semibold">
           <CircleAlert className="size-4 shrink-0" />
           <span>Kindly note, in-grown nails are not treated as part of these services.</span>
         </p>

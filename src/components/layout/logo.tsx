@@ -14,14 +14,14 @@ export function Logo({ size = "default" }: Props) {
       )}
       href="/"
     >
-      <span
+      {/* <span
         className={cn(
           "border-deepespresso -rotate-90 rounded-l-3xl rounded-r-[100px] border border-dashed px-1.5 py-1 text-sm font-medium",
           size === "lg" && "text-xl",
         )}
       >
         the
-      </span>
+      </span> */}
       <span className="shrink-0 font-bold tracking-tighter">Shape Nails</span>
     </Link>
   );

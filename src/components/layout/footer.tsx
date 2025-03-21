@@ -69,7 +69,7 @@ export function Footer() {
       </section>
 
       <section className="text-charcoal mb-8 flex flex-col items-center justify-center gap-1 text-sm">
-        <p>Copyright &copy; {new Date().getFullYear()}, The Shape Nails. All rights reserved.</p>
+        <p>Copyright &copy; {new Date().getFullYear()}, Shape Nails. All rights reserved.</p>
         <p className="flex items-center gap-1">
           <span>Designed by</span>
           <Button variant={"link"} className="text-charcoal px-0">

@@ -27,7 +27,7 @@ export function GelXSection() {
               className="border-olive flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
             >
               <span className="tracking-wide">{item.title}</span>
-              <span className="font-normal">$ {item.price}</span>
+              <span className="font-normal">$ {item.price}+</span>
             </div>
           ))}
         </div>

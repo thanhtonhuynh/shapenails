@@ -17,12 +17,13 @@ export const gelManicure: Category = {
     },
   ],
   addOns: [
-    { title: "BIAB Removal", price: 10 },
-    { title: "Dip Removal", price: 10 },
-    { title: "Gel-X Removal", price: 10 },
-    { title: "Acrylic Removal", price: 15 },
+    { title: "BIAB Removal", price: 13 },
+    { title: "Dip Removal", price: 13 },
+    { title: "Gel-X Removal", price: 13 },
+    { title: "Acrylic Removal", price: 18 },
 
     { title: "Nail Art (Per Nail)", price: 5 },
+    { title: "Cat Eye", price: 5 },
     { title: "French Tips", price: 10 },
     { title: "Chrome", price: 15 },
   ],

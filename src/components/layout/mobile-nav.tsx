@@ -11,7 +11,7 @@ const containerVariants = {
     width: "100vw",
     height: "100vh",
     top: "-30px",
-    right: "-17px",
+    right: "-25px",
     borderRadius: 0,
     transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
   },

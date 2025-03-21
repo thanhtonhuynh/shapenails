@@ -10,11 +10,6 @@ export const gelX: Category = {
       price: 65,
       pricePlus: true,
     },
-    {
-      title: "Refill",
-      price: 50,
-      pricePlus: true,
-    },
   ],
   addOns: [
     { title: "Gel-X Removal", price: 5, bold: true },
@@ -24,6 +19,7 @@ export const gelX: Category = {
 
     { title: "Nail Art (Per Nail)", price: 5 },
     { title: "Repair (Per Nail)", price: 5 },
+    { title: "Cat Eye", price: 5 },
     { title: "French Tips", price: 10 },
     { title: "Ombre", price: 15 },
     { title: "Chrome", price: 15 },

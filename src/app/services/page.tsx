@@ -8,6 +8,7 @@ import { ServicesHeader } from "./hero";
 import { KidsSection } from "./kids-section";
 import { PedicureSection } from "./pedicure-section";
 import { RemovalSection } from "./removal-section";
+import { WaxingSection } from "./waxing-section";
 
 export default function Page() {
   return (
@@ -33,6 +34,7 @@ export default function Page() {
           <RemovalSection />
           {/* </div> */}
           <KidsSection />
+          <WaxingSection />
         </div>
       </main>
     </>

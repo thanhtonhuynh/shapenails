@@ -6,7 +6,7 @@ export function HomeHero() {
     <header className="clip-trapezoid bg-warmsand px-4 pt-28 pb-40 shadow-sm sm:px-8">
       <div className="relative mx-auto w-full max-w-(--breakpoint-2xl) lg:flex">
         <div className="relative flex flex-1 gap-4 sm:gap-8 md:justify-center lg:gap-4 xl:gap-16">
-          <div className="relative h-[300px] flex-1 translate-y-16 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[250px] lg:h-[450px]">
+          <div className="relative h-[300px] flex-1 translate-y-16 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[200px] lg:h-[450px]">
             <Image
               src={"/home1.png"}
               alt="Hero Image"
@@ -15,7 +15,7 @@ export function HomeHero() {
             />
           </div>
 
-          <div className="relative h-[300px] flex-1 translate-y-8 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[250px] lg:h-[450px]">
+          <div className="relative h-[300px] flex-1 translate-y-8 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[200px] lg:h-[450px]">
             <Image
               src={"/home2.png"}
               alt="Hero Image"
@@ -24,7 +24,7 @@ export function HomeHero() {
             />
           </div>
 
-          <div className="relative h-[300px] flex-1 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[250px] lg:h-[450px]">
+          <div className="relative h-[300px] flex-1 rounded-t-[100px] rounded-b-3xl shadow-sm sm:h-[350px] md:h-[400px] md:max-w-[200px] lg:h-[450px]">
             <Image
               src={"/services2.png"}
               alt="Hero Image"
@@ -35,12 +35,12 @@ export function HomeHero() {
         </div>
 
         <div className="absolute top-1/2 w-full lg:hidden">
-          <div className="text-ivory mx-auto flex w-full max-w-xl min-w-xs flex-col items-center gap-4 uppercase sm:min-w-lg">
+          <div className="text-ivory mx-auto flex w-full max-w-xl flex-col items-center gap-4 uppercase">
             <h1 className="flex flex-col items-center gap-1 font-extrabold tracking-widest drop-shadow-[3px_3px_2px_rgb(59,47,47)] sm:flex-row sm:items-start sm:gap-2.5">
               Shape Nails
             </h1>
 
-            <p className="font-playfair-display bg-charcoal/20 rounded-md p-1 text-center font-medium tracking-widest">
+            <p className="font-playfair-display bg-deepespresso/40 rounded-xs p-1 text-center font-medium tracking-wide">
               Shaping Stories Through Stunning Nails
             </p>
             <div className="mt-2 lg:hidden">

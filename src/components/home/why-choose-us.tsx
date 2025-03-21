@@ -6,7 +6,7 @@ export function WhyChooseUs() {
     <section className="bg-warmsand flex flex-col gap-8 px-4 py-16 sm:px-8">
       <div className="flex flex-col items-center gap-8">
         <h2 className="flex flex-col gap-1 text-center text-2xl tracking-widest uppercase md:flex-row md:gap-2.5 md:text-3xl">
-          <span>Why Choose</span> <span>the Shape Nails?</span>
+          <span>Why Choose</span> <span>Shape Nails?</span>
         </h2>
 
         <p className="text-sm leading-6">

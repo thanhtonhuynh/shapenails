@@ -18,7 +18,7 @@ export function AcrylicSection() {
           {acrylic.title}
         </h2>
 
-        <p className="text-sm">{acrylic.description}</p>
+        <p className="text-sm leading-6 whitespace-pre-wrap">{acrylic.description}</p>
 
         <div className="">
           {acrylic.services.map((item, i) => (
