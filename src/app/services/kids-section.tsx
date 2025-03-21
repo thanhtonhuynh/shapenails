@@ -36,7 +36,7 @@ export function KidsSection() {
                 {item.subServices && (
                   <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
                     {item.subServices.map((subItem, j) => (
-                      <div key={j} className="flex gap-4 text-sm">
+                      <div key={j} className="flex justify-between gap-4 text-sm">
                         <span className="font-medium">{subItem.title}</span>
                         <span className="shrink-0 font-normal">
                           $ {subItem.price}

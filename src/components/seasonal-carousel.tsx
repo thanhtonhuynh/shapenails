@@ -16,7 +16,7 @@ export function SeasonalCarousel() {
           return (
             <CarouselItem key={i} className="sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
               <div className="group mb-1 overflow-hidden rounded-lg shadow-sm select-none">
-                <div className="relative h-[500px] overflow-hidden">
+                <div className="relative h-[400px] overflow-hidden sm:h-[500px]">
                   <Image
                     src={service.image}
                     alt={service.title}

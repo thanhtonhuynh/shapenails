@@ -31,7 +31,7 @@ export function WaxingSection() {
             {waxing.services.map((item, i) => (
               <div
                 key={i}
-                className="border-claybrown flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+                className="border-claybrown flex justify-between gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
               >
                 <span className="tracking-wide">{item.title}</span>
                 <span className="font-normal">$ {item.price}+</span>

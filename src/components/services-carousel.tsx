@@ -18,7 +18,7 @@ export function ServiceCarousel() {
               key={i}
               className="relative sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
             >
-              <div className="group relative mb-1 h-[500px] overflow-hidden rounded-lg shadow-sm select-none">
+              <div className="group relative mb-1 h-[400px] overflow-hidden rounded-lg shadow-sm select-none sm:h-[500px]">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -28,7 +28,7 @@ export function ServiceCarousel() {
                 />
 
                 <div className="absolute bottom-[5%] flex w-full justify-center">
-                  <h6 className="bg-warmsand/75 text-deepespresso rounded-full px-8 py-4 font-semibold tracking-wide uppercase">
+                  <h6 className="bg-warmsand/75 text-deepespresso rounded-full px-8 py-3 font-semibold tracking-wide uppercase">
                     {service.title}
                   </h6>
                 </div>

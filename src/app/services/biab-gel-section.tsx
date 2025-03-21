@@ -25,7 +25,7 @@ export function BiabGelSection() {
             {biabGel.services.map((item, i) => (
               <div
                 key={i}
-                className="border-olive flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+                className="border-olive flex justify-between gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
               >
                 <span className="tracking-wide">{item.title}</span>
                 <span className="font-normal">$ {item.price}+</span>

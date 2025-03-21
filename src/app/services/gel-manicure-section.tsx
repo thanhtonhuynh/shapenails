@@ -29,7 +29,7 @@ export function GelManicureSection() {
             {gelManicure.services.map((item, i) => (
               <AccordionItem className="border-claybrown" key={i} value={`item-${i}`}>
                 <AccordionTrigger className="cursor-pointer uppercase">
-                  <div className="flex gap-4">
+                  <div className="flex w-full justify-between gap-4">
                     <span className="tracking-wide">{item.title}</span>
                     <span className="font-normal">$ {item.price}</span>
                   </div>

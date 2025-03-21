@@ -34,15 +34,16 @@ export function HomeHero() {
           </div>
         </div>
 
-        <div className="absolute top-1/2 w-full lg:hidden">
-          <div className="text-ivory mx-auto flex w-full max-w-xl flex-col items-center gap-4 uppercase">
-            <h1 className="flex flex-col items-center gap-1 font-extrabold tracking-widest drop-shadow-[3px_3px_2px_rgb(59,47,47)] sm:flex-row sm:items-start sm:gap-2.5">
+        <div className="absolute top-2/3 w-full -translate-y-1/2 lg:hidden">
+          <div className="text-ivory mx-auto flex w-full max-w-xl flex-col items-center gap-4">
+            <h1 className="flex flex-col items-center gap-1 text-center font-extrabold tracking-widest uppercase drop-shadow-[3px_3px_2px_rgb(59,47,47)] sm:flex-row sm:items-start sm:gap-2.5">
               Shape Nails
             </h1>
 
             <p className="font-playfair-display bg-deepespresso/40 rounded-xs p-1 text-center font-medium tracking-wide">
               Shaping Stories Through Stunning Nails
             </p>
+
             <div className="mt-2 lg:hidden">
               <BookNowButton />
             </div>

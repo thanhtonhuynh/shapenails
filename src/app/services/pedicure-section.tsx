@@ -34,7 +34,7 @@ export function PedicureSection() {
             {pedicure.services.map((item, i) => (
               <AccordionItem className="border-olive" key={i} value={`item-${i}`}>
                 <AccordionTrigger className="cursor-pointer uppercase">
-                  <div className="flex gap-4">
+                  <div className="flex w-full items-center justify-between gap-4">
                     <span className="tracking-wide">{item.title}</span>
                     <span className="font-normal">
                       $ {item.price}
@@ -47,10 +47,10 @@ export function PedicureSection() {
                   <p>{item.description}</p>
                   {item.addOns && (
                     <div className="space-y-2">
-                      <h5 className="font-medium uppercase">Add-ons</h5>
-                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
+                      <h5 className="font-bold uppercase">Add-ons</h5>
+                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-8">
                         {item.addOns.map((addOn, i) => (
-                          <div key={i} className="flex gap-4 text-sm">
+                          <div key={i} className="flex justify-between gap-4 text-sm">
                             <span className="font-medium">{addOn.title}</span>
                             <span>$ {addOn.price}+</span>
                           </div>
