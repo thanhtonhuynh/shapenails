@@ -9,7 +9,7 @@ import {
 import { pedicure } from "@/constants/categories/pedicure";
 import { CircleAlert } from "lucide-react";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function PedicureSection() {
   return (

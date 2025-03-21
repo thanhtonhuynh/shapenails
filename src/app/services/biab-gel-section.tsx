@@ -3,7 +3,7 @@
 import { biabGel } from "@/constants/categories/biab-gel";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function BiabGelSection() {
   return (

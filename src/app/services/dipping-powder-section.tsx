@@ -3,7 +3,7 @@
 import { dippingPowder } from "@/constants/categories/dipping-powder";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function DippingPowderSection() {
   return (

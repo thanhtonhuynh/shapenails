@@ -3,7 +3,7 @@
 import { waxing } from "@/constants/categories/waxing";
 import { CircleAlert } from "lucide-react";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function WaxingSection() {
   return (

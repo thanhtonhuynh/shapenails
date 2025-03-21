@@ -22,7 +22,7 @@ export const basicManicure: Category = {
       price: 12,
     },
     {
-      title: "Cutting Nail",
+      title: "Cutting Nails",
       description:
         "A simple and efficient service to trim and shape your nails to your desired length and style. Ideal for maintaining neat, healthy nails.",
       price: 10,

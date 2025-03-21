@@ -2,7 +2,7 @@
 
 import { removal } from "@/constants/categories/removal";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function RemovalSection() {
   return (

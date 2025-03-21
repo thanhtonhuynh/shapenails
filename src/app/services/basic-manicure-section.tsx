@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { basicManicure } from "@/constants/categories/basic-manicure";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function BasicManicureSection() {
   return (
@@ -24,30 +24,32 @@ export function BasicManicureSection() {
           {basicManicure.title}
         </h2>
 
-        <Accordion type="multiple">
-          {basicManicure.services.map((item, i) => (
-            <AccordionItem className="border-olive" key={i} value={`item-${i}`}>
-              <AccordionTrigger className="cursor-pointer uppercase">
-                <div className="flex gap-4">
-                  <span className="tracking-wide">{item.title}</span>
-                  <span className="font-normal">$ {item.price}</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>{item.description}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <div className="px-8 pt-4 pb-12">
+          <Accordion type="multiple">
+            {basicManicure.services.map((item, i) => (
+              <AccordionItem className="border-olive" key={i} value={`item-${i}`}>
+                <AccordionTrigger className="cursor-pointer uppercase">
+                  <div className="flex gap-4">
+                    <span className="tracking-wide">{item.title}</span>
+                    <span className="font-normal">$ {item.price}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>{item.description}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
 
-        <div className="space-y-2">
-          <h5 className="font-medium uppercase">Add-ons</h5>
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
-            {basicManicure.addOns &&
-              basicManicure.addOns.map((item, i) => (
-                <div key={i} className="flex gap-4 text-sm">
-                  <span className="font-medium">{item.title}</span>
-                  <span>$ {item.price}+</span>
-                </div>
-              ))}
+          <div className="mt-2 space-y-3">
+            <h5 className="border-olive border-b font-bold uppercase">Add-ons</h5>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
+              {basicManicure.addOns &&
+                basicManicure.addOns.map((item, i) => (
+                  <div key={i} className="flex gap-4 text-sm">
+                    <span className="font-medium">{item.title}</span>
+                    <span>$ {item.price}+</span>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
 

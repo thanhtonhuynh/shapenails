@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { gelManicure } from "@/constants/categories/gel-manicure";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function GelManicureSection() {
   return (

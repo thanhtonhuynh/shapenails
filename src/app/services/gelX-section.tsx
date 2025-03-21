@@ -3,7 +3,7 @@
 import { gelX } from "@/constants/categories/gel-x";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import { CornerPill } from "./corner-pill";
+import { CornerPill } from "./reusables/corner-pill";
 
 export function GelXSection() {
   return (
