@@ -1,6 +1,13 @@
+import { Metadata } from "next";
 import { GalleryHero } from "./hero";
 import { GalleryIntro } from "./intro";
 import { LightboxGallery } from "./lightbox-gallery";
+
+export const metadata: Metadata = {
+  title: "Nail Arts Gallery - Shape Nails",
+  description:
+    "Every design tells a story! Explore our nail art gallery to find inspiration for your next manicure or pedicure. From simple and elegant to bold and colorful, we have a style for every mood and occasion.",
+};
 
 export default function Page() {
   return (

@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { contactLinks, socialLinks } from "@/constants";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ContactHero } from "./hero";
+
+export const metadata: Metadata = {
+  title: "Contact Shape Nails",
+  description:
+    "Struggling to decide the right solution for your nails? We're just a message or call away. Contact Shape Nails today for personalized assistance and support.",
+};
 
 export default function Page() {
   return (
