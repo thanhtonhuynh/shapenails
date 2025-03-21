@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   title: "Shape Nails",
   description:
     "Shape Nails, shaping stories through stunning nails. Well-shaped nails are more than a detail - they're a statement. Whether you're seeking timeless elegance or bold designs, our mission is to enhance your natural beauty with expert care and stunning nail artistry.",
-  metadataBase: new URL("https://shapenails.com"),
+  metadataBase: new URL("https://shapenails.vercel.app"),
   openGraph: {
     siteName: "Shape Nails",
-    url: "https://shapenails.com",
+    url: "https://shapenails.vercel.app",
     locale: "en_US",
     type: "website",
     images: [
