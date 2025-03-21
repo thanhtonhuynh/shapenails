@@ -9,7 +9,7 @@ export default function Page() {
 
       <main className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 sm:px-8">
         <section className="flex flex-col gap-4">
-          <h2 className="text-2xl tracking-wider uppercase md:text-3xl">
+          <h2 className="text-xl tracking-widest uppercase md:text-3xl">
             Give the Gift of Self-Care
           </h2>
           <p className="leading-7">
@@ -20,7 +20,7 @@ export default function Page() {
         </section>
 
         <section className="flex flex-col gap-4">
-          <h2 className="tracking-wider uppercase">How it Works</h2>
+          <h4 className="font-playfair-display tracking-wider uppercase">How it Works</h4>
           <div className="leading-7">
             <p>1. Click the button below to visit our Fresha page.</p>
             <p>2. Choose the amount you want to gift.</p>
@@ -30,11 +30,13 @@ export default function Page() {
         </section>
 
         <section className="flex flex-col gap-8">
-          <h2 className="tracking-wider uppercase">Why Choose Shape Nails Gift Cards?</h2>
+          <h4 className="font-playfair-display tracking-wider uppercase">
+            Why Choose Shape Nails Gift Cards?
+          </h4>
 
           <div className="grid grid-cols-1 gap-8 rounded-lg md:grid-cols-2">
             <div className="bg-warmsand border-olive flex flex-col justify-center gap-4 rounded-tl-4xl rounded-br-4xl border-t border-b border-dashed p-8 shadow-sm">
-              <h4 className="font-playfair-display tracking-wider uppercase">Instant Delivery</h4>
+              <h5 className="font-playfair-display tracking-wider uppercase">Instant Delivery</h5>
               <p className="leading-6">
                 Send a beautiful digital gift card instantly to your loved ones, no waiting
                 required.
@@ -42,9 +44,9 @@ export default function Page() {
             </div>
 
             <div className="bg-warmsand border-olive flex flex-col justify-center gap-4 rounded-tr-4xl rounded-bl-4xl border-t border-b border-dashed p-8 shadow-sm">
-              <h4 className="font-playfair-display tracking-wider uppercase">
+              <h5 className="font-playfair-display tracking-wider uppercase">
                 Perfect for Any Occasion
-              </h4>
+              </h5>
               <p className="leading-6">
                 Birthdays, holidays, anniversaries, or just because. A Shape Nails gift card is
                 always a thoughtful surprise.
@@ -52,9 +54,9 @@ export default function Page() {
             </div>
 
             <div className="bg-warmsand border-olive flex flex-col justify-center gap-4 rounded-tr-4xl rounded-bl-4xl border-t border-b border-dashed p-8 shadow-sm">
-              <h4 className="font-playfair-display tracking-wider uppercase">
+              <h5 className="font-playfair-display tracking-wider uppercase">
                 Thoughtful & Personal
-              </h4>
+              </h5>
               <p className="leading-6">
                 Give the gift of "me time". Whether they're a first-time guest or a regular,
                 everyone loves a moment of self-care.
@@ -62,9 +64,9 @@ export default function Page() {
             </div>
 
             <div className="bg-warmsand border-olive flex flex-col justify-center gap-4 rounded-tl-4xl rounded-br-4xl border-t border-b border-dashed p-8 shadow-sm">
-              <h4 className="font-playfair-display tracking-wider uppercase">
+              <h5 className="font-playfair-display tracking-wider uppercase">
                 Flexible & Convenient
-              </h4>
+              </h5>
               <p className="leading-6">
                 Choose the amount, and your recipient can enjoy any service—from stunning nail art
                 to soothing spa treatments.
@@ -74,9 +76,9 @@ export default function Page() {
         </section>
 
         <section className="bg-olive flex flex-col items-center gap-4 rounded-lg border px-4 py-8 shadow-sm sm:mx-auto sm:w-fit sm:p-12">
-          <h3 className="font-playfair-display text-center font-bold tracking-wide uppercase">
+          <h4 className="font-playfair-display text-center font-bold tracking-wider uppercase">
             Ready to make someone's day?
-          </h3>
+          </h4>
           <p className="text-center text-sm">
             It's quick, easy, and the perfect way to show you care.
           </p>

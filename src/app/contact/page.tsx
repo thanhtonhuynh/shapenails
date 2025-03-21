@@ -10,7 +10,9 @@ export default function Page() {
 
       <main className="mx-auto my-16 w-full max-w-(--breakpoint-2xl) space-y-16">
         <section className="space-y-6 px-4 sm:px-8">
-          <h2 className="uppercase">How can we help you today?</h2>
+          <h2 className="text-xl tracking-widest uppercase md:text-3xl">
+            How can we help you today?
+          </h2>
           <div>
             <p>
               We understand deciding the right solution for your nails can feel overwhelming. We're

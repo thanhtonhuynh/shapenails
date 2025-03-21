@@ -12,7 +12,7 @@ export function FollowUs() {
             <span>Get Inspired.</span>
           </h2>
 
-          <div className="space-y-1 leading-6">
+          <div className="space-y-1 text-sm leading-6">
             <p>
               Explore our latest nail art, special offers, and get inspired by our talented artists.
             </p>

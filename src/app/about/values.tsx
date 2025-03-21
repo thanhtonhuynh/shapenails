@@ -5,7 +5,7 @@ export function Values() {
   return (
     <section className="space-y-16 p-4 sm:p-8">
       <div className="text-deepespresso flex flex-col items-center gap-2">
-        <h2 className="uppercase">Our Values</h2>
+        <h2 className="text-2xl tracking-widest uppercase md:text-3xl">Our Values</h2>
       </div>
 
       <div className="flex flex-col gap-1">

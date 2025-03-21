@@ -5,7 +5,7 @@ export function Mission() {
     <section className="flex flex-col-reverse sm:flex-row sm:gap-0">
       <div className="flex flex-col items-center sm:basis-2/3">
         <div className="border-deepespresso text-deepespresso flex w-full flex-col items-center justify-center gap-2 border-dashed p-4 sm:basis-1/2 sm:border-b sm:p-8">
-          <h2 className="uppercase">Our Mission & Vision</h2>
+          <h2 className="text-2xl tracking-widest uppercase md:text-3xl">Our Mission & Vision</h2>
         </div>
 
         <div className="flex flex-col justify-center gap-2 p-4 sm:basis-1/2 sm:p-8">
