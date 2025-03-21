@@ -15,13 +15,15 @@ export const metadata: Metadata = {
   title: "Shape Nails",
   description:
     "Shape Nails, shaping stories through stunning nails. Well-shaped nails are more than a detail - they're a statement. Whether you're seeking timeless elegance or bold designs, our mission is to enhance your natural beauty with expert care and stunning nail artistry.",
+  metadataBase: new URL("https://shapenails.com"),
   openGraph: {
-    title: "Shape Nails",
-    description:
-      "Shape Nails, shaping stories through stunning nails. Well-shaped nails are more than a detail - they're a statement. Whether you're seeking timeless elegance or bold designs, our mission is to enhance your natural beauty with expert care and stunning nail artistry.",
+    siteName: "Shape Nails",
+    url: "https://shapenails.com",
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: "/assets/images/about1.png",
+        url: "/about1.png",
         width: 1200,
         height: 630,
         alt: "Shape Nails",
