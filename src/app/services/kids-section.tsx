@@ -4,6 +4,7 @@ import { kidServices } from "@/constants/categories/kids";
 import { CircleAlert } from "lucide-react";
 import { motion } from "motion/react";
 import { CornerPill } from "./reusables/corner-pill";
+import { ServiceHeading } from "./reusables/service-heading";
 
 export function KidsSection() {
   return (
@@ -14,10 +15,8 @@ export function KidsSection() {
       viewport={{ once: true }}
       className="mb-8"
     >
-      <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed p-8 pt-20 pb-12 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h2 className="bg-olive absolute top-0 left-0 rounded-tl-3xl rounded-br-3xl p-4 px-8 tracking-widest">
-          {kidServices.title}
-        </h2>
+      <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <ServiceHeading color="olive" title={kidServices.title} position="left" />
 
         <p className="text-terracotta flex items-center gap-2 text-sm font-semibold">
           <CircleAlert className="size-4 shrink-0" />

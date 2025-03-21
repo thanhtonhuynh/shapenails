@@ -4,6 +4,7 @@ import { biabGel } from "@/constants/categories/biab-gel";
 import { motion } from "motion/react";
 import { CornerPill } from "./reusables/corner-pill";
 import { ServiceAddOns } from "./reusables/service-addons";
+import { ServiceHeading } from "./reusables/service-heading";
 
 export function BiabGelSection() {
   return (
@@ -15,9 +16,7 @@ export function BiabGelSection() {
       className="mb-8"
     >
       <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h2 className="bg-olive w-fit rounded-tl-3xl rounded-br-3xl px-8 py-4 tracking-wider">
-          {biabGel.title}
-        </h2>
+        <ServiceHeading color="olive" title={biabGel.title} position="left" />
 
         <div className="px-8 pt-4 pb-12">
           <p className="text-sm">{biabGel.description}</p>
