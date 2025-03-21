@@ -18,21 +18,21 @@ export function GelXSection() {
       <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="olive" title={gelX.title} position="left" />
 
-        <p className="text-sm">{gelX.description}</p>
-
-        <div className="">
-          {gelX.services.map((item, i) => (
-            <div
-              key={i}
-              className="border-olive flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
-            >
-              <span className="tracking-wide">{item.title}</span>
-              <span className="font-normal">$ {item.price}+</span>
-            </div>
-          ))}
+        <div className="px-8 pt-2 pb-12">
+          <p className="text-sm">{gelX.description}</p>
+          <div className="">
+            {gelX.services.map((item, i) => (
+              <div
+                key={i}
+                className="border-olive flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+              >
+                <span className="tracking-wide">{item.title}</span>
+                <span className="font-normal">$ {item.price}+</span>
+              </div>
+            ))}
+          </div>
+          <ServiceAddOns color="olive" addOns={gelX.addOns} />
         </div>
-
-        <ServiceAddOns color="olive" addOns={gelX.addOns} />
 
         <CornerPill position="right" color="olive" />
       </section>

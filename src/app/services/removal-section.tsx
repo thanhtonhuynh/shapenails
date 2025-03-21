@@ -17,18 +17,20 @@ export function RemovalSection() {
       <section className="border-claybrown bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="claybrown" title={removal.title} position="right" />
 
-        <p className="text-sm">{removal.description}</p>
+        <div className="px-8 pt-2 pb-12">
+          <p className="text-sm">{removal.description}</p>
 
-        <div className="">
-          {removal.services.map((item, i) => (
-            <div
-              key={i}
-              className="border-claybrown flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
-            >
-              <span className="tracking-wide">{item.title}</span>
-              <span className="font-normal">$ {item.price}+</span>
-            </div>
-          ))}
+          <div>
+            {removal.services.map((item, i) => (
+              <div
+                key={i}
+                className="border-claybrown flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+              >
+                <span className="tracking-wide">{item.title}</span>
+                <span className="font-normal">$ {item.price}+</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <CornerPill position="left" color="claybrown" />

@@ -6,7 +6,7 @@ import { CornerPill } from "./reusables/corner-pill";
 import { ServiceAddOns } from "./reusables/service-addons";
 import { ServiceHeading } from "./reusables/service-heading";
 
-export function DippingPowderSection() {
+export function DipPowderSection() {
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}
@@ -18,21 +18,23 @@ export function DippingPowderSection() {
       <section className="border-claybrown bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="claybrown" title={dippingPowder.title} position="right" />
 
-        <p className="text-sm">{dippingPowder.description}</p>
+        <div className="px-8 pt-2 pb-12">
+          <p className="text-sm">{dippingPowder.description}</p>
 
-        <div className="">
-          {dippingPowder.services.map((item, i) => (
-            <div
-              key={i}
-              className="border-claybrown flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
-            >
-              <span className="tracking-wide">{item.title}</span>
-              <span className="font-normal">$ {item.price}+</span>
-            </div>
-          ))}
+          <div>
+            {dippingPowder.services.map((item, i) => (
+              <div
+                key={i}
+                className="border-claybrown flex gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+              >
+                <span className="tracking-wide">{item.title}</span>
+                <span className="font-normal">$ {item.price}+</span>
+              </div>
+            ))}
+          </div>
+
+          <ServiceAddOns color="claybrown" addOns={dippingPowder.addOns} />
         </div>
-
-        <ServiceAddOns color="claybrown" addOns={dippingPowder.addOns} />
 
         <CornerPill position="left" color="claybrown" />
       </section>

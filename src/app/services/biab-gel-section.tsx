@@ -18,7 +18,7 @@ export function BiabGelSection() {
       <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="olive" title={biabGel.title} position="left" />
 
-        <div className="px-8 pt-4 pb-12">
+        <div className="px-8 pt-2 pb-12">
           <p className="text-sm">{biabGel.description}</p>
 
           <div>
