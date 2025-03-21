@@ -32,7 +32,7 @@ export function KidsSection() {
                 key={i}
                 className="border-olive flex flex-col gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
               >
-                <div className="font-semibold tracking-wide">{item.title}</div>
+                <div className="font-bold tracking-wide">{item.title}</div>
                 {item.subServices && (
                   <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-4">
                     {item.subServices.map((subItem, j) => (
