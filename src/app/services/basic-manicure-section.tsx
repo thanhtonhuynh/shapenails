@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { basicManicure } from "@/constants/categories/basic-manicure";
 import { motion } from "motion/react";
+import { CornerPill } from "./corner-pill";
 
 export function BasicManicureSection() {
   return (
@@ -18,8 +19,8 @@ export function BasicManicureSection() {
       viewport={{ once: true }}
       className="mb-8"
     >
-      <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed p-8 pt-20 pb-12 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h2 className="bg-olive absolute top-0 left-0 rounded-tl-3xl rounded-br-3xl p-4 px-8 tracking-widest">
+      <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <h2 className="bg-olive w-fit rounded-tl-3xl rounded-br-3xl px-8 py-4 tracking-widest">
           {basicManicure.title}
         </h2>
 
@@ -50,7 +51,7 @@ export function BasicManicureSection() {
           </div>
         </div>
 
-        <div className="bg-olive absolute right-0 bottom-0 size-10 rounded-tl-3xl rounded-br-3xl transition duration-300 group-hover:scale-125" />
+        <CornerPill position="right" color="olive" />
       </section>
     </motion.section>
   );

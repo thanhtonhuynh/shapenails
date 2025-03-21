@@ -3,6 +3,7 @@
 import { dippingPowder } from "@/constants/categories/dipping-powder";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import { CornerPill } from "./corner-pill";
 
 export function DippingPowderSection() {
   return (
@@ -45,7 +46,7 @@ export function DippingPowderSection() {
           </div>
         </div>
 
-        <div className="bg-claybrown absolute bottom-0 left-0 size-10 rounded-tr-3xl rounded-bl-3xl transition duration-300 group-hover:scale-125" />
+        <CornerPill position="left" color="claybrown" />
       </section>
     </motion.section>
   );

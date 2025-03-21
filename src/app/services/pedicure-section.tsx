@@ -9,6 +9,7 @@ import {
 import { pedicure } from "@/constants/categories/pedicure";
 import { CircleAlert } from "lucide-react";
 import { motion } from "motion/react";
+import { CornerPill } from "./corner-pill";
 
 export function PedicureSection() {
   return (
@@ -63,7 +64,7 @@ export function PedicureSection() {
           ))}
         </Accordion>
 
-        <div className="bg-olive absolute right-0 bottom-0 size-10 rounded-tl-3xl rounded-br-3xl transition duration-300 group-hover:scale-125" />
+        <CornerPill position="right" color="olive" />
       </section>
     </motion.section>
   );

@@ -3,6 +3,7 @@
 import { acrylic } from "@/constants/categories/acrylic";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import { CornerPill } from "./corner-pill";
 
 export function AcrylicSection() {
   return (
@@ -57,7 +58,7 @@ export function AcrylicSection() {
           </div>
         </div>
 
-        <div className="bg-claybrown absolute bottom-0 left-0 size-10 rounded-tr-3xl rounded-bl-3xl transition duration-300 group-hover:scale-125" />
+        <CornerPill position="left" color="claybrown" />
       </section>
     </motion.section>
   );

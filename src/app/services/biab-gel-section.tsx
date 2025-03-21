@@ -3,6 +3,7 @@
 import { biabGel } from "@/constants/categories/biab-gel";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import { CornerPill } from "./corner-pill";
 
 export function BiabGelSection() {
   return (
@@ -49,7 +50,7 @@ export function BiabGelSection() {
           </div>
         </div>
 
-        <div className="bg-olive absolute right-0 bottom-0 size-10 rounded-tl-3xl rounded-br-3xl transition duration-300 group-hover:scale-125" />
+        <CornerPill position="right" color="olive" />
       </section>
     </motion.section>
   );
