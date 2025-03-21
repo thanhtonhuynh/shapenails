@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/about1.png",
-        width: 1200,
-        height: 630,
+        // width: 1200,
+        // height: 630,
         alt: "Shape Nails",
       },
     ],
