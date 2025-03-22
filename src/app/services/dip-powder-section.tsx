@@ -28,7 +28,10 @@ export function DipPowderSection() {
                 className="border-claybrown flex justify-between gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
               >
                 <span className="tracking-wide">{item.title}</span>
-                <span className="font-normal">$ {item.price}+</span>
+                <div className="flex min-w-9 justify-between gap-1 font-normal">
+                  <span>$</span>
+                  <span>{item.price}+</span>
+                </div>
               </div>
             ))}
           </div>

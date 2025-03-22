@@ -36,10 +36,10 @@ export function PedicureSection() {
                 <AccordionTrigger className="cursor-pointer uppercase">
                   <div className="flex w-full items-center justify-between gap-4">
                     <span className="tracking-wide">{item.title}</span>
-                    <span className="font-normal">
-                      $ {item.price}
-                      {item.pricePlus && <span>+</span>}
-                    </span>
+                    <div className="flex min-w-10 justify-between gap-1 font-normal">
+                      <span>$</span>
+                      <span>{item.price}+</span>
+                    </div>
                   </div>
                 </AccordionTrigger>
 
@@ -52,7 +52,10 @@ export function PedicureSection() {
                         {item.addOns.map((addOn, i) => (
                           <div key={i} className="flex justify-between gap-4 text-sm">
                             <span className="font-medium">{addOn.title}</span>
-                            <span>$ {addOn.price}+</span>
+                            <div className="flex min-w-10 justify-between gap-1">
+                              <span>$</span>
+                              <span>{addOn.price}+</span>
+                            </div>
                           </div>
                         ))}
                       </div>

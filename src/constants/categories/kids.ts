@@ -7,19 +7,19 @@ export const kidServices: Category = {
     {
       title: "Manicure",
       subServices: [
-        { title: "Regular Color Change", price: 10 },
-        { title: "Gel Color Change", price: 20 },
-        { title: "Regular Manicure", price: 13 },
-        { title: "Gel Manicure", price: 23 },
+        { title: "Regular Color Change", price: 10, pricePlus: true },
+        { title: "Gel Color Change", price: 20, pricePlus: true },
+        { title: "Regular Manicure", price: 13, pricePlus: true },
+        { title: "Gel Manicure", price: 23, pricePlus: true },
       ],
     },
     {
       title: "Pedicure",
       subServices: [
-        { title: "Regular Color Change", price: 10 },
-        { title: "Gel Color Change", price: 20 },
-        { title: "Regular Pedicure", price: 25 },
-        { title: "Gel Pedicure", price: 35 },
+        { title: "Regular Color Change", price: 10, pricePlus: true },
+        { title: "Gel Color Change", price: 20, pricePlus: true },
+        { title: "Regular Pedicure", price: 25, pricePlus: true },
+        { title: "Gel Pedicure", price: 35, pricePlus: true },
       ],
     },
   ],

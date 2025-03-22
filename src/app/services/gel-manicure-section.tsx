@@ -31,7 +31,13 @@ export function GelManicureSection() {
                 <AccordionTrigger className="cursor-pointer uppercase">
                   <div className="flex w-full justify-between gap-4">
                     <span className="tracking-wide">{item.title}</span>
-                    <span className="font-normal">$ {item.price}</span>
+                    <div className="flex min-w-10 justify-between gap-1 font-normal">
+                      <span>$</span>
+                      <span>
+                        {item.price}
+                        {item.pricePlus && <span>+</span>}
+                      </span>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>{item.description}</AccordionContent>

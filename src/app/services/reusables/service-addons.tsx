@@ -15,7 +15,10 @@ export function ServiceAddOns({ addOns, color }: Props) {
           addOns.map((item, i) => (
             <div key={i} className="flex justify-between gap-4 text-sm">
               <span className={cn("font-medium", item.bold && "font-bold")}>{item.title}</span>
-              <span>$ {item.price}+</span>
+              <div className="flex min-w-10 justify-between gap-1">
+                <span>$</span>
+                <span>{item.price}+</span>
+              </div>
             </div>
           ))}
       </div>

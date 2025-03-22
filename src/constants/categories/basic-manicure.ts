@@ -20,12 +20,14 @@ export const basicManicure: Category = {
       description:
         "A fast service to remove old polish and apply a fresh coat of your choice, with optional nail shaping. Perfect for a quick update without a full manicure.",
       price: 12,
+      pricePlus: true,
     },
     {
       title: "Cutting Nails",
       description:
         "A simple and efficient service to trim and shape your nails to your desired length and style. Ideal for maintaining neat, healthy nails.",
       price: 10,
+      pricePlus: true,
     },
   ],
   addOns: [

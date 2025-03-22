@@ -54,10 +54,10 @@ export function AcrylicSection() {
                     {item.subServices.map((subItem, j) => (
                       <div key={j} className="flex justify-between gap-4 text-sm">
                         <span className="font-medium">{subItem.title}</span>
-                        <span className="shrink-0 font-normal">
-                          $ {subItem.price}
-                          {subItem.pricePlus && <span>+</span>}
-                        </span>
+                        <div className="flex min-w-10 justify-between gap-1 font-normal">
+                          <span>$</span>
+                          <span>{subItem.price}+</span>
+                        </div>
                       </div>
                     ))}
                   </div>
