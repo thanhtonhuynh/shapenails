@@ -7,12 +7,12 @@ export const biabGel: Category = {
   services: [
     {
       title: "BIAB",
-      price: 53,
+      price: 60,
       pricePlus: true,
     },
     {
       title: "Refill",
-      price: 43,
+      price: 50,
       pricePlus: true,
     },
   ],
