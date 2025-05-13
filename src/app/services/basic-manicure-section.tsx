@@ -31,7 +31,7 @@ export function BasicManicureSection() {
                 <AccordionTrigger className="cursor-pointer uppercase">
                   <div className="flex w-full justify-between gap-4">
                     <span className="tracking-wide">{item.title}</span>
-                    <div className="flex min-w-9 justify-between gap-1 font-normal">
+                    <div className="flex min-w-10 justify-between font-normal">
                       <span>$</span>
                       <span>
                         {item.price}
@@ -40,7 +40,9 @@ export function BasicManicureSection() {
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent>{item.description}</AccordionContent>
+                <AccordionContent className="whitespace-pre-wrap">
+                  {item.description}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

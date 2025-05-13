@@ -19,7 +19,7 @@ export const gelX: Category = {
 
     { title: "Nail Art (Per Nail)", price: 5 },
     { title: "Repair (Per Nail)", price: 5 },
-    { title: "Cat Eye", price: 5 },
+    { title: "Cat Eye", price: 10 },
     { title: "French Tips", price: 10 },
     { title: "Ombre", price: 15 },
     { title: "Chrome", price: 15 },

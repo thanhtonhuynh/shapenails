@@ -7,7 +7,7 @@ export const dippingPowder: Category = {
   services: [
     {
       title: "Dip Powder",
-      price: 47,
+      price: 50,
       pricePlus: true,
     },
   ],
@@ -20,8 +20,9 @@ export const dippingPowder: Category = {
     { title: "Nail Art (Per Nail)", price: 5 },
     { title: "Repair (Per Nail)", price: 5 },
     { title: "French Tips", price: 10 },
-    { title: "Extension", price: 13 },
+    { title: "Extension", price: 15 },
     { title: "Ombre", price: 15 },
     { title: "Chrome", price: 15 },
+    { title: "Cat Eye", price: 15 },
   ],
 };

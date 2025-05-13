@@ -26,5 +26,6 @@ export const biabGel: Category = {
     { title: "Repair (Per Nail)", price: 5 },
     { title: "Chrome", price: 15 },
     { title: "French Tips", price: 10 },
+    { title: "Cat Eye", price: 10 },
   ],
 };

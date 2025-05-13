@@ -44,7 +44,7 @@ export function PedicureSection() {
                 </AccordionTrigger>
 
                 <AccordionContent className="flex flex-col gap-4">
-                  <p>{item.description}</p>
+                  <p className="whitespace-pre-wrap">{item.description}</p>
                   {item.addOns && (
                     <div className="space-y-2">
                       <h5 className="font-bold uppercase">Add-ons</h5>

@@ -8,17 +8,15 @@ export const acrylic: Category = {
     {
       title: "Full Set",
       subServices: [
-        { title: "Regular Color", price: 55, pricePlus: true },
-        { title: "Powder Color", price: 60, pricePlus: true },
-        { title: "Gel Color", price: 65, pricePlus: true },
+        { title: "Powder Color", price: 70, pricePlus: true },
+        { title: "Gel Color", price: 75, pricePlus: true },
       ],
     },
     {
       title: "Refill",
       subServices: [
-        { title: "Regular Color", price: 45, pricePlus: true },
         { title: "Powder Color", price: 50, pricePlus: true },
-        { title: "Gel Color", price: 55, pricePlus: true },
+        { title: "Gel Color", price: 60, pricePlus: true },
       ],
     },
   ],
@@ -30,7 +28,7 @@ export const acrylic: Category = {
 
     { title: "Nail Art (Per Nail)", price: 5 },
     { title: "Repair (Per Nail)", price: 5 },
-    { title: "Cat Eye", price: 5 },
+    { title: "Cat Eye", price: 10 },
     { title: "French Tips", price: 10 },
     { title: "Ombre", price: 15 },
     { title: "Chrome", price: 15 },
