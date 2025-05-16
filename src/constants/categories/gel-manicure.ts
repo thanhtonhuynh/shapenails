@@ -22,7 +22,7 @@ export const gelManicure: Category = {
     { title: "Gel Removal", price: 2, bold: true },
     { title: "BIAB Removal", price: 12 },
     { title: "Dip Removal", price: 12 },
-    { title: "Gel-X Removal", price: 17 },
+    { title: "Gel-X Removal", price: 12 },
     { title: "Acrylic Removal", price: 17 },
 
     { title: "Nail Art (Per Nail)", price: 5 },

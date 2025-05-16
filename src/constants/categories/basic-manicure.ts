@@ -15,6 +15,7 @@ export const basicManicure: Category = {
       description:
         "Includes nail shaping, cuticle care, and a relaxing massage.\nDazzle Dry is a revolutionary, non-toxic nail care system that delivers the long-lasting wear of polish without the need for UV/LED lights or soaking removal.\nIt dries completely in 5 minutes, is vegan, cruelty-free, and formulated without harmful chemicals.",
       price: 33,
+      pricePlus: true,
     },
     {
       title: "Polish Refresh",
