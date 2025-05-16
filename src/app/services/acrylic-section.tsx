@@ -17,7 +17,7 @@ export function AcrylicSection() {
       viewport={{ once: true }}
       className="mb-8"
     >
-      <section className="border-claybrown bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300">
+      <section className="border-claybrown bg-warmsand group relative flex transform flex-col gap-2 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="claybrown" title={acrylic.title} position="right" />
 
         <div className="px-8 pt-2 pb-12">
