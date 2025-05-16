@@ -23,7 +23,7 @@ export default function Page() {
       <ServicesHeader />
 
       <main className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 sm:px-8">
-        <div className="">
+        <div className="columns-1 gap-8 lg:columns-2">
           <BasicManicureSection />
           <GelManicureSection />
           <BiabGelSection />
