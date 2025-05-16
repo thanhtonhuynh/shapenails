@@ -13,12 +13,10 @@ export function AcrylicSection() {
     <motion.section
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      // whileHover={{ translateY: -2, transition: { duration: 0.3 } }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="group border-claybrown bg-warmsand mb-8 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
-      <section className="relative flex flex-col gap-2">
+      <section className="border-claybrown bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-md rounded-tr-3xl rounded-br-md rounded-bl-3xl border-t border-b border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="claybrown" title={acrylic.title} position="right" />
 
         <div className="px-8 pt-2 pb-12">

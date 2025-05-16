@@ -23,17 +23,21 @@ export default function Page() {
       <ServicesHeader />
 
       <main className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 sm:px-8">
-        <div className="columns-1 gap-8 lg:columns-2">
-          <BasicManicureSection />
-          <GelManicureSection />
-          <BiabGelSection />
-          <DipPowderSection />
-          <GelXSection />
-          <AcrylicSection />
-          <PedicureSection />
-          <RemovalSection />
-          <KidsSection />
-          <WaxingSection />
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
+          <div className="flex flex-col gap-8">
+            <BasicManicureSection />
+            <GelManicureSection />
+            <BiabGelSection />
+            <DipPowderSection />
+            <GelXSection />
+          </div>
+          <div className="flex flex-col gap-8">
+            <AcrylicSection />
+            <PedicureSection />
+            <RemovalSection />
+            <KidsSection />
+            <WaxingSection />
+          </div>
         </div>
       </main>
     </>
