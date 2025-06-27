@@ -18,8 +18,8 @@ export const kidServices: Category = {
       subServices: [
         { title: "Regular Color Change", price: 10, pricePlus: true },
         { title: "Gel Color Change", price: 20, pricePlus: true },
-        { title: "Regular Pedicure", price: 25, pricePlus: true },
-        { title: "Gel Pedicure", price: 35, pricePlus: true },
+        { title: "Regular Pedicure", price: 30, pricePlus: true },
+        { title: "Gel Pedicure", price: 40, pricePlus: true },
       ],
     },
   ],

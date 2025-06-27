@@ -7,7 +7,7 @@ export const pedicure: Category = {
       title: "Express Pedicure",
       description:
         "A quick yet refreshing pedicure that includes a warm soak, nail trimming, shaping, cuticle cleaning, moisturizing lotion, and your choice of polish for a clean and polished finish. Perfect for those on the go!",
-      price: 30,
+      price: 32,
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "Nail Art (Per Nail)", price: 5 },
@@ -24,7 +24,7 @@ export const pedicure: Category = {
       title: "Basic Pedicure",
       description:
         "Experience the ultimate in foot care with our Basic Pedicure. This treatment includes a warm soak, nail trimming, shaping, cuticle care, gentle exfoliation, and callus removal to smooth and soften rough, dry heel. A soothing towel wrap and relaxing lotion massage follow, leaving your feet feeling refreshed and smooth. Finally, choose your preferred polish color for a perfectly polished, well-groomed finish.",
-      price: 38,
+      price: 40,
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "Nail Art (Per Nail)", price: 5 },
@@ -41,7 +41,7 @@ export const pedicure: Category = {
       title: "Deluxe Pedicure",
       description:
         "Relax with our luxurious treatment designed for ultimate pampering. Begin with a soothing aromatic soak, followed by expert nail care, cuticle treatment, and gentle exfoliation. A nourishing hydrating mask replenishes moisture, then a warm towel wrap comforts and softens your feet. Enjoy a calming hot stone massage to release tension, finishing with your choice of polish for perfectly rejuvenated feet. With premium products and extra time dedicated to each step, this service offers the perfect spa experience.",
-      price: 58,
+      price: 60,
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "Nail Art (Per Nail)", price: 5 },
