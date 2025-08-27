@@ -23,10 +23,22 @@ export function GelXSection() {
             {gelX.services.map((item, i) => (
               <div
                 key={i}
-                className="border-olive flex justify-between gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
+                className="border-olive flex flex-col gap-4 border-b py-4 text-sm font-medium uppercase last:border-b-0"
               >
-                <span className="tracking-wide">{item.title}</span>
-                <span className="font-normal">$ {item.price}+</span>
+                <span className="font-bold tracking-wide">{item.title}</span>
+                {item.subServices && (
+                  <div className="flex flex-col gap-2">
+                    {item.subServices.map((subItem, subIndex) => (
+                      <div key={subIndex} className="flex justify-between gap-4 text-sm">
+                        <span className="font-medium">{subItem.title}</span>
+                        <div className="flex min-w-10 justify-between gap-1 font-normal">
+                          <span>$</span>
+                          <span>{subItem.price}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

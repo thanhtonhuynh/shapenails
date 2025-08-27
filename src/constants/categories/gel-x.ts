@@ -6,9 +6,13 @@ export const gelX: Category = {
     "Discover endless possibilities with Gel-X, offering a wide range of nail lengths and beautiful shapes to suit your style. From short and natural to long and dramatic, Gel-X allows you to choose the perfect length and shape, including oval, almond, coffin, stiletto, and more. With a flawless, chip-free finish that lasts up to 3-4 weeks, Gel-X ensures your nails look stunning and perfectly shaped for weeks.",
   services: [
     {
-      title: "Full Set",
-      price: 65,
-      pricePlus: true,
+      title: "Available sizes",
+      subServices: [
+        { title: "Extra Short", price: 65 },
+        { title: "Short", price: 70 },
+        { title: "Medium", price: 75 },
+        { title: "Long", price: 90 },
+      ],
     },
   ],
   addOns: [
