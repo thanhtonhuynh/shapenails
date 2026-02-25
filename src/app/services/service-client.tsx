@@ -1,20 +1,36 @@
-import { Metadata } from "next";
-import { ServicesHeader } from "./hero";
-import { ServiceClient } from "./service-client";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Services - Shape Nails",
-  description:
-    "Shape Nails offers a variety of nail and waxing services to help you look and feel your best. Manicures, pedicures, BIAB gel, dip powder, gel X, acrylic, kids' services, waxing, and more. Book your appointment today and experience the difference!",
-};
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { AcrylicSection } from "./acrylic-section";
+import { BasicManicureSection } from "./basic-manicure-section";
+import { BiabGelSection } from "./biab-gel-section";
+import { DipPowderSection } from "./dip-powder-section";
+import { GelManicureSection } from "./gel-manicure-section";
+import { GelXSection } from "./gelX-section";
+import { KidsSection } from "./kids-section";
+import { PedicureSection } from "./pedicure-section";
+import { RemovalSection } from "./removal-section";
+import { WaxingSection } from "./waxing-section";
 
-export default function Page() {
+export function ServiceClient() {
+  const [displayServices, setDisplayServices] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const displayServices = localStorage.getItem("displayServices");
+
+      if (displayServices && displayServices === "true") {
+        setDisplayServices(true);
+      }
+    }
+  }, []);
+
   return (
     <>
-      <ServicesHeader />
-
-      {/* Maintenance Section - please check back later */}
-      {/* <section className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 text-center sm:px-8">
+      {!displayServices && (
+        <section className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 text-center sm:px-8">
           <h2 className="text-xl tracking-widest uppercase md:text-3xl">Maintenance</h2>
 
           <div className="flex flex-col items-center gap-4">
@@ -31,9 +47,11 @@ export default function Page() {
               </Link>
             </Button>
           </div>
-        </section> */}
+        </section>
+      )}
 
-      {/* <main className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 sm:px-8">
+      {displayServices && (
+        <main className="mx-auto my-16 flex w-full max-w-(--breakpoint-2xl) flex-col gap-16 px-4 sm:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             <div className="flex flex-col gap-8">
               <BasicManicureSection />
@@ -50,9 +68,8 @@ export default function Page() {
               <WaxingSection />
             </div>
           </div>
-        </main> */}
-
-      <ServiceClient />
+        </main>
+      )}
     </>
   );
 }
