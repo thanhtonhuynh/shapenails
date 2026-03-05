@@ -11,7 +11,7 @@ export const pedicure: Category = {
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "French Tips Gel", price: 10 },
-        { title: "Dazzle Dry", price: 10 },
+        { title: "Dazzle Dry (Recommended)", price: 10 },
         { title: "Cat Eye", price: 10 },
         { title: "Chrome", price: 15 },
         { title: "Gel Color", price: 15 },
@@ -28,7 +28,7 @@ export const pedicure: Category = {
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "French Tips Gel", price: 10 },
-        { title: "Dazzle Dry", price: 10 },
+        { title: "Dazzle Dry (Recommended)", price: 10 },
         { title: "Cat Eye", price: 10 },
         { title: "Chrome", price: 15 },
         { title: "Gel Color", price: 15 },
@@ -45,7 +45,7 @@ export const pedicure: Category = {
       addOns: [
         { title: "Gel Removal", price: 5 },
         { title: "French Tips Gel", price: 10 },
-        { title: "Dazzle Dry", price: 10 },
+        { title: "Dazzle Dry (Recommended)", price: 10 },
         { title: "Cat Eye", price: 10 },
         { title: "Chrome", price: 15 },
         { title: "Gel Color", price: 15 },
@@ -79,7 +79,7 @@ export const pedicure: Category = {
       addOns: [
         { title: "Gel Removal", price: 3 },
         { title: "French Tips Gel", price: 10 },
-        { title: "Dazzle Dry Color", price: 8 },
+        { title: "Dazzle Dry (Recommended)", price: 10 },
         { title: "Cat Eye", price: 10 },
         { title: "Chrome", price: 15 },
         { title: "Gel Color", price: 13 },

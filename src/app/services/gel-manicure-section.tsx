@@ -46,12 +46,12 @@ export function GelManicureSection() {
 
           <ServiceAddOns color="claybrown" addOns={gelManicure.addOns} />
 
-          <p className="text-deepespresso/80 mt-6 flex items-center gap-3 text-xs font-medium">
+          <div className="text-deepespresso/80 mt-6 flex items-center gap-3 text-xs font-medium">
             <div className="flex flex-col gap-0.5">
               <span>Please note that additional charges may apply for longer nail lengths.</span>{" "}
               <span>Your technician will kindly inform you before beginning the service.</span>
             </div>
-          </p>
+          </div>
         </div>
 
         <CornerPill position="left" color="claybrown" />
