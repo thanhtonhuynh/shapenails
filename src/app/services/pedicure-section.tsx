@@ -23,7 +23,7 @@ export function PedicureSection() {
       <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="olive" title={pedicure.title} position="left" />
 
-        <div className="px-8 pt-2 pb-12">
+        <div className="px-8 pt-2 pb-10">
           <p className="text-terracotta flex items-center gap-2 text-sm font-semibold">
             <CircleAlert className="size-4 shrink-0" />
             <span>Kindly note, in-grown nails are not treated as part of these services.</span>
@@ -64,6 +64,10 @@ export function PedicureSection() {
               </AccordionItem>
             ))}
           </Accordion>
+
+          <p className="text-deepespresso/80 mt-3 flex items-center gap-3 text-xs font-medium">
+            <span>To ensure safety, we do not use metal foot files on heels.</span>
+          </p>
         </div>
 
         <CornerPill position="right" color="olive" />

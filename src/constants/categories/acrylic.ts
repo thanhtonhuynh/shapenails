@@ -5,17 +5,11 @@ export const acrylic: Category = {
   services: [
     {
       title: "Full Set",
-      subServices: [
-        { title: "Powder Color", price: 70, pricePlus: true },
-        { title: "Gel Color", price: 75, pricePlus: true },
-      ],
+      subServices: [{ title: "Gel Color", price: 80, pricePlus: true }],
     },
     {
       title: "Refill",
-      subServices: [
-        { title: "Powder Color", price: 50, pricePlus: true },
-        { title: "Gel Color", price: 60, pricePlus: true },
-      ],
+      subServices: [{ title: "Gel Color", price: 70, pricePlus: true }],
     },
   ],
   addOns: [
@@ -24,11 +18,9 @@ export const acrylic: Category = {
     { title: "BIAB Removal", price: 5 },
     { title: "Gel-X Removal", price: 5 },
 
-    { title: "Nail Art (Per Nail)", price: 5 },
-    { title: "Repair (Per Nail)", price: 5 },
     { title: "Cat Eye", price: 10 },
-    { title: "French Tips", price: 10 },
-    { title: "Ombre", price: 15 },
+    { title: "French Tips", price: 15 },
     { title: "Chrome", price: 15 },
+    { title: "Ombre", price: 20 },
   ],
 };

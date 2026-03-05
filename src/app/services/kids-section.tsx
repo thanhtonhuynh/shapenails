@@ -17,7 +17,7 @@ export function KidsSection() {
       <section className="border-olive bg-warmsand group relative flex flex-col gap-2 overflow-hidden rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md border-r border-l border-dashed shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <ServiceHeading color="olive" title={kidServices.title} position="left" />
 
-        <div className="px-8 pt-2 pb-12">
+        <div className="px-8 pt-2 pb-10">
           <p className="text-terracotta flex items-center gap-2 text-sm font-semibold">
             <CircleAlert className="size-4 shrink-0" />
             <span>
@@ -51,6 +51,13 @@ export function KidsSection() {
               </div>
             ))}
           </div>
+
+          <p className="text-deepespresso/80 mt-6 flex items-center gap-3 text-xs font-medium">
+            <div className="flex flex-col gap-0.5">
+              <span>Please note that additional charges may apply for longer nail lengths.</span>{" "}
+              <span>Your technician will kindly inform you before beginning the service.</span>
+            </div>
+          </p>
         </div>
 
         <CornerPill position="right" color="olive" />

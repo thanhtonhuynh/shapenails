@@ -8,7 +8,7 @@ export const gelX: Category = {
     {
       title: "Available sizes",
       subServices: [
-        { title: "Extra Short", price: 65 },
+        { title: "Extra Short", price: 70 },
         { title: "Short", price: 70 },
         { title: "Medium", price: 75 },
         { title: "Long", price: 90 },
@@ -21,8 +21,6 @@ export const gelX: Category = {
     { title: "BIAB Removal", price: 5 },
     { title: "Acrylic Removal", price: 10 },
 
-    { title: "Nail Art (Per Nail)", price: 5 },
-    { title: "Repair (Per Nail)", price: 5 },
     { title: "Cat Eye", price: 10 },
     { title: "French Tips", price: 10 },
     { title: "Ombre", price: 15 },
