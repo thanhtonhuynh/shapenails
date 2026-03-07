@@ -14,7 +14,7 @@ export const gelManicure: Category = {
       title: "Gel Polish Refresh",
       description:
         "Refresh your look with a quick gel color change! This service includes removing your old gel polish and applying a fresh, vibrant color of your choice. Perfect for those who want to switch things up without a full manicure.",
-      price: 33,
+      price: 35,
       pricePlus: true,
     },
   ],
