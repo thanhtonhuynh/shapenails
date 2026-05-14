@@ -21,9 +21,9 @@ export const gelX: Category = {
     { title: "BIAB Removal", price: 5 },
     { title: "Acrylic Removal", price: 10 },
 
-    { title: "Cat Eye", price: 10 },
-    { title: "French Tips", price: 10 },
-    { title: "Ombre", price: 15 },
-    { title: "Chrome", price: 15 },
+    { title: "Cat Eye", price: 15 },
+    { title: "French Tips", price: 15 },
+    { title: "Ombre", price: 20 },
+    { title: "Chrome", price: 20 },
   ],
 };

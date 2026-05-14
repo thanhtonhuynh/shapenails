@@ -18,9 +18,9 @@ export const acrylic: Category = {
     { title: "BIAB Removal", price: 5 },
     { title: "Gel-X Removal", price: 5 },
 
-    { title: "Cat Eye", price: 10 },
+    { title: "Cat Eye", price: 15 },
     { title: "French Tips", price: 15 },
-    { title: "Chrome", price: 15 },
+    { title: "Chrome", price: 20 },
     { title: "Ombre", price: 20 },
   ],
 };

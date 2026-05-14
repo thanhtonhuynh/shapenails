@@ -7,7 +7,7 @@ export const dippingPowder: Category = {
   services: [
     {
       title: "Dip Powder",
-      price: 50,
+      price: 55,
       pricePlus: true,
     },
   ],
