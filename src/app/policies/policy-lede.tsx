@@ -6,27 +6,26 @@ const phone = contactLinks.find((link) => link.key === "phone")!;
 
 export function PolicyLede() {
   return (
-    <section className="mx-auto w-full max-w-(--breakpoint-2xl) px-4 pt-20 pb-24 sm:px-8 md:pt-28 md:pb-32">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="flex flex-col gap-8 lg:col-span-7 lg:col-start-5">
-          <p className="font-playfair-display text-deepespresso text-2xl leading-[1.5] lg:text-[2rem] lg:leading-[1.45]">
-            These are the policies we follow so that every appointment runs smoothly and fairly, for
-            our guests and for our team.
-          </p>
+    <section className="mx-auto w-full max-w-(--breakpoint-2xl) px-4 pt-16 pb-16 sm:px-8 md:pt-24 md:pb-20">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
+        <p className="font-playfair-display text-deepespresso text-2xl leading-[1.35] lg:col-span-7 lg:col-start-5 lg:row-start-1 lg:text-[2.25rem] lg:leading-[1.3]">
+          Most of this comes down to two things: arriving on time, and knowing what your service will
+          cost before we start.
+        </p>
 
-          <div className="text-charcoal flex flex-col gap-2 text-sm leading-7">
-            <p>
-              If anything here is unclear, call or text us at{" "}
-              <Link
-                href={phone.href}
-                className="text-deepespresso underline decoration-dotted underline-offset-4"
-              >
-                {phone.title}
-              </Link>{" "}
-              before you book.
-            </p>
-            <p>Last updated {policiesLastUpdated}</p>
-          </div>
+        {/* Sits in the column the sticky index occupies once the clauses begin. */}
+        <div className="text-charcoal flex flex-col gap-2 text-sm leading-7 lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:pt-2 lg:pl-6">
+          <p>
+            Call or text us at{" "}
+            <Link
+              href={phone.href}
+              className="text-deepespresso underline decoration-dotted underline-offset-4"
+            >
+              {phone.title}
+            </Link>{" "}
+            if anything here is unclear.
+          </p>
+          <p>Last updated {policiesLastUpdated}</p>
         </div>
       </div>
     </section>

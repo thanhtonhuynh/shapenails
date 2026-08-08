@@ -58,7 +58,7 @@ function PolicyClause({ policy, index }: { policy: Policy; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       viewport={{ once: true, amount: 0.15 }}
-      className="border-claybrown/25 flex scroll-mt-28 flex-col gap-6 border-t py-12 first:border-t-0 first:pt-0 md:flex-row md:gap-10 md:py-16"
+      className="border-claybrown/25 flex scroll-mt-28 flex-col gap-6 border-t py-12 md:flex-row md:gap-10 md:py-16"
     >
       <span
         aria-hidden

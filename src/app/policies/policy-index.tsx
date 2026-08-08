@@ -58,7 +58,8 @@ export function PolicyIndexRail({ activeId }: { activeId: string }) {
 /** Plain typographic list above the clauses on small screens. */
 export function PolicyIndexCompact() {
   return (
-    <nav aria-label="Policies" className="border-claybrown/25 border-y py-8 lg:hidden">
+    // Clause 01 supplies the closing rule, so this only draws its own top rule.
+    <nav aria-label="Policies" className="border-claybrown/25 border-t pt-8 pb-4 lg:hidden">
       <ol className="grid grid-cols-1 gap-x-8 gap-y-1 sm:grid-cols-2">
         {policies.map((policy, i) => (
           <li key={policy.id}>
