@@ -1,6 +1,6 @@
+import { PageHeader } from "@/components/layout/page-header";
 import { Metadata } from "next";
 import { ClosingNote } from "./closing-note";
-import { PoliciesHeader } from "./hero";
 import { PolicyLede } from "./policy-lede";
 import { PolicyManuscript } from "./policy-manuscript";
 
@@ -13,7 +13,18 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <PoliciesHeader />
+      <PageHeader
+        title="Salon Policies"
+        tone="olive"
+        images={[
+          {
+            src: "/about4.png",
+            alt: "Two hands with a soft nude gel manicure and thin gold rings",
+          },
+          { src: "/home1.png", alt: "Hands with long almond nails in nude and soft pink" },
+          { src: "/home2.png", alt: "A hand with a peach manicure holding a dried palm leaf" },
+        ]}
+      />
       <PolicyLede />
       <PolicyManuscript />
       <ClosingNote />

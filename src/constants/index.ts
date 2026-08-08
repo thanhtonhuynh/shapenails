@@ -12,6 +12,7 @@ export const navItems = [
   { title: "Gallery", href: "/gallery" },
   // { title: "Gift Cards", href: "/gift-cards" },
   { title: "Contact", href: "/contact" },
+  { title: "Policies", href: "/policies" },
 ];
 
 export const mobileNavItems = [
@@ -21,8 +22,6 @@ export const mobileNavItems = [
   },
   ...navItems,
 ];
-
-export const footerExploreItems = [...navItems, { title: "Salon Policies", href: "/policies" }];
 
 export const socialLinks = [
   {

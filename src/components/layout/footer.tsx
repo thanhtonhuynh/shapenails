@@ -1,4 +1,4 @@
-import { contactLinks, footerExploreItems, socialLinks } from "@/constants";
+import { contactLinks, navItems, socialLinks } from "@/constants";
 import Link from "next/link";
 import { BookNowButton } from "../book-now-button";
 import { Button } from "../ui/button";
@@ -70,7 +70,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h5 className="font-playfair-display tracking-wide uppercase">Explore</h5>
             <nav className="flex flex-col items-start gap-2 tracking-wide capitalize">
-              {footerExploreItems.map((item) => (
+              {navItems.map((item) => (
                 <Button key={item.href} asChild variant={"link"} className="h-fit !px-0 py-0.5">
                   <Link href={item.href}>{item.title}</Link>
                 </Button>

@@ -177,6 +177,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* Always reserve the scrollbar so navigating between pages of different
+       heights does not shift centred content sideways. */
+    scrollbar-gutter: stable;
+  }
   body {
     @apply bg-background text-foreground;
   }
