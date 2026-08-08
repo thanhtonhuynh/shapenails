@@ -38,4 +38,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# claude — local-only settings (shared guidelines stay tracked)
+.claude/*.local.md
 next-env.d.ts
