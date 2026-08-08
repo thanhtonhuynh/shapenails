@@ -22,6 +22,8 @@ export const mobileNavItems = [
   ...navItems,
 ];
 
+export const footerExploreItems = [...navItems, { title: "Salon Policies", href: "/policies" }];
+
 export const socialLinks = [
   {
     title: "Shape Nails Medford",
