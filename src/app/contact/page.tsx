@@ -1,8 +1,8 @@
+import { PageHeader } from "@/components/layout/page-header";
 import { Button } from "@/components/ui/button";
 import { contactLinks, socialLinks } from "@/constants";
 import { Metadata } from "next";
 import Link from "next/link";
-import { ContactHero } from "./hero";
 
 export const metadata: Metadata = {
   title: "Contact Shape Nails",
@@ -13,7 +13,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <ContactHero />
+      <PageHeader
+        title="Contact Us"
+        tone="claybrown"
+        images={[
+          {
+            src: "/about1.png",
+            alt: "Hands of different skin tones clasped together in a chain, each with nude almond nails",
+          },
+          { src: "/about2.png", alt: "Two hands with long nude almond nails and a slim gold ring" },
+          {
+            src: "/about3.png",
+            alt: "A hand with white almond nails and gold rings resting on a cream leather clutch",
+          },
+        ]}
+      />
 
       <main className="mx-auto my-16 w-full max-w-(--breakpoint-2xl) space-y-16">
         <section className="space-y-6 px-4 sm:px-8">
