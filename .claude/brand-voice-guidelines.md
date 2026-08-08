@@ -5,24 +5,24 @@ For a nail salon website whose voice should read **professional, premium, polite
 Premium here means *restraint*, not luxury vocabulary. Polite means the guest is never the first
 party handed an instruction.
 
-The policies page has the right **register** — plain, confident, respectful of the reader's time.
-But its current opening line shows how easily that register tips into brusqueness:
+The policies lede is the north star. Every new piece of copy should sound like it came from the
+same hand:
+
+> ✓ "We want your time with us to feel calm and unhurried. Everything below is what to expect
+> before you arrive, from how we handle changes to what your service will cost."
+
+It opens with the salon's commitment, not the guest's duty. It explains, it doesn't sell. It
+assumes an intelligent adult is reading, and it never once tells them what to do.
+
+An earlier draft of that same line shows how easily this register tips into brusqueness:
 
 > ✗ "Most of this comes down to two things: arriving on time, and knowing what your service will
 > cost before we start."
 
-Two faults, both structural rather than tonal. **"Comes down to" is reductive** — the register of
+Two faults, both structural rather than tonal. **"Comes down to" is reductive**, the register of
 someone slightly impatient explaining something obvious. And **the first obligation named belongs
-to the guest**, which opens the page by framing them as the thing most likely to go wrong.
-
-The corrected form is the north star:
-
-> ✓ "We'll tell you what your service will cost before we begin. All we ask is that you arrive on
-> time — everything below is detail."
-
-Same information, same economy, no instruction until the salon has named its own commitment
-first. It explains, it doesn't sell, and it assumes an intelligent adult is reading. Every new
-piece of copy should sound like it came from that hand.
+to the guest**, which opens the page by framing them as the thing most likely to go wrong. Same
+facts, same economy, opposite manners.
 
 ---
 
@@ -59,7 +59,7 @@ If it sounds like a well-run salon **telling you how things work**, it's right.
 | Gallery / seasonal | Medium | Low-Medium | Medium-High | Let the images lead; text stays out of the way. |
 | Booking / CTA | Medium | Low | High | Invite, don't urge. No scarcity or countdown language. |
 | Contact / hours | High | Low | Medium-High | Impeccable information, offered rather than posted. |
-| Gift cards | Medium-High | Low | High | A gift is personal — speak to the giver, warmly and briefly. |
+| Gift cards | Medium-High | Low | High | A gift is personal: speak to the giver, warmly and briefly. |
 | Service recovery | High | Low | High | Acknowledge, state the remedy, thank them. No excuses. |
 
 **Energy is low almost everywhere.** That is deliberate and is most of what separates premium
@@ -88,7 +88,7 @@ transferred**" is welcoming. The rule didn't soften; the guest kept a choice.
 
 **3. Extend the invitation explicitly.** Say who is welcome, plainly.
 "Walk-ins are welcome, based on availability." "Whether it's your first visit or your fiftieth."
-"You're welcome to bring a reference — or none at all."
+"You're welcome to bring a reference, or none at all."
 
 **4. Use the grammar of hospitality.** These constructions carry welcome at low volume:
 
@@ -161,8 +161,18 @@ appearance per page, at most. Never in policies, pricing, or contact copy.
 
 The policies page already sets the standard; match it everywhere.
 
-- **Em dashes** (`—`) or en dashes for ranges, not a spaced hyphen. Current copy uses
-  `service - it's a story`; it should be `service — it's a story`.
+- **No em dashes.** Do not use `—` in guest-facing copy, and do not substitute a spaced hyphen
+  (`service - it's a story`) for one. Recast instead. In order of preference:
+
+  | Instead of a dash | Use | Example |
+  |---|---|---|
+  | Aside or elaboration | Two sentences | `We hold your full time. Please arrive on time so we can use all of it.` |
+  | Explanation of the clause before | A colon | `Two things make a visit easy: the price is agreed first, and the time is yours.` |
+  | Parenthetical | Commas | `Walk-ins, based on availability, are welcome.` |
+  | Numeric range | The word "to" | `9 am to 6 pm`, not `9–6` |
+
+  A sentence that seems to need a dash is usually two sentences that haven't been separated yet.
+  Splitting them almost always improves the pace, which suits the unhurried voice anyway.
 - **Typographic apostrophes** (`'`) and quotes (`"` `"`), not straight ASCII. The policies
   constants already do this correctly (`24 hours' notice`).
 - **Prices** always with a currency symbol and no trailing zeros ambiguity: `$50`, `$100`.
