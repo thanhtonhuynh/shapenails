@@ -1,4 +1,4 @@
-import { contactLinks, socialLinks } from "@/constants";
+import { contactLinks, footerExploreItems, socialLinks } from "@/constants";
 import Link from "next/link";
 import { BookNowButton } from "../book-now-button";
 import { Button } from "../ui/button";
@@ -29,7 +29,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:flex lg:justify-center lg:gap-32">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:flex lg:justify-center lg:gap-16 xl:gap-24">
           <div className="flex flex-col gap-4">
             <h5 className="font-playfair-display tracking-wide uppercase">Business Hours</h5>
             <div className="space-y-2 text-sm font-medium tracking-wide uppercase">
@@ -65,6 +65,17 @@ export function Footer() {
                 </Button>
               ))}
             </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h5 className="font-playfair-display tracking-wide uppercase">Explore</h5>
+            <nav className="flex flex-col items-start gap-2 tracking-wide capitalize">
+              {footerExploreItems.map((item) => (
+                <Button key={item.href} asChild variant={"link"} className="h-fit !px-0 py-0.5">
+                  <Link href={item.href}>{item.title}</Link>
+                </Button>
+              ))}
+            </nav>
           </div>
         </div>
       </section>
