@@ -67,12 +67,12 @@ function PolicyClause({ policy, index }: { policy: Policy; index: number }) {
         {String(index + 1).padStart(2, "0")}
       </span>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         <h2 className="font-playfair-display text-deepespresso text-2xl tracking-wide md:text-3xl">
           {policy.title}
         </h2>
 
-        <ul className="flex max-w-[58ch] list-none flex-col gap-5 leading-8">
+        <ul className="flex max-w-[58ch] list-none flex-col gap-5 leading-7">
           {policy.points.map((point) => (
             <li key={point.text}>
               {point.text}
