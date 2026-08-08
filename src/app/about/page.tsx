@@ -18,10 +18,13 @@ export default function Page() {
         tone="claybrown"
         images={[
           {
+            src: "/home2.png",
+            alt: "A hand with a peach manicure holding a dried palm leaf",
+          },
+          {
             src: "/about1.png",
             alt: "Hands of different skin tones clasped together in a chain, each with nude almond nails",
           },
-          { src: "/about2.png", alt: "Two hands with long nude almond nails and a slim gold ring" },
           {
             src: "/about3.png",
             alt: "A hand with white almond nails and gold rings resting on a cream leather clutch",

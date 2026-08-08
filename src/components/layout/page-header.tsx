@@ -20,25 +20,51 @@ export function PageHeader({
   images,
   tagline,
   action,
+  fullHeight = false,
 }: {
   title: string;
   tone: PageHeaderTone;
   images: PageHeaderImage[];
   tagline?: string;
   action?: React.ReactNode;
+  /** Only the landing page fills the viewport; content pages stay short so the page starts sooner. */
+  fullHeight?: boolean;
 }) {
   return (
-    <header className={cn("clip-trapezoid px-4 pt-28 pb-40 shadow-sm sm:px-8", bandByTone[tone])}>
-      <div className="mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col items-center gap-12 lg:flex-row lg:gap-8">
-        <div className="text-deepespresso order-1 flex flex-col items-center gap-5 text-center lg:order-2 lg:basis-1/3 lg:items-start lg:text-left">
-          <h1 className="text-4xl leading-[1.05] tracking-tight text-balance uppercase sm:text-5xl lg:text-[3.25rem]">
+    <header
+      className={cn(
+        // Same domed bottom edge as the footer CTA band.
+        "flex flex-col justify-center px-4 pt-24 shadow-sm [clip-path:var(--clip-dome)] sm:px-8 sm:[clip-path:var(--clip-dome-sm)] [@media(min-height:850px)]:pt-28",
+        fullHeight ? "min-h-[100dvh] pb-32" : "pb-28 sm:pb-32",
+        bandByTone[tone],
+      )}
+    >
+      {/* One centred stack at every width. The dome trims both bottom corners, so the extra
+          bottom padding keeps content clear of the curve. */}
+      <div
+        className={cn(
+          "text-deepespresso mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col items-center text-center",
+          // Short laptops spend their height on the arches instead of the gaps, so the
+          // full-height header still fits in exactly one viewport.
+          fullHeight ? "gap-8 [@media(min-height:850px)]:gap-16" : "gap-8 sm:gap-12",
+        )}
+      >
+        {/* Title and tagline read as one masthead, so they sit closer to each other than
+            either does to the arc. */}
+        <div className="flex flex-col items-center gap-5">
+          <h1
+            className={cn(
+              "leading-[0.95] tracking-tight text-balance uppercase",
+              fullHeight
+                ? "text-4xl sm:text-5xl lg:text-[4rem]"
+                : "text-3xl sm:text-4xl lg:text-5xl",
+            )}
+          >
             {title}
           </h1>
 
-          {/* Everything on the band is display-sized on purpose: deepespresso only clears
-              WCAG's 3:1 large-text bar against these mid-tones, never the 4.5:1 small-text one. */}
           {tagline && (
-            <p className="font-playfair-display max-w-sm pb-1 text-xl leading-snug text-balance">
+            <p className="font-playfair-display max-w-md pb-1 text-xl leading-snug text-balance">
               {tagline}
             </p>
           )}
@@ -46,7 +72,11 @@ export function PageHeader({
           {action && <div className="mt-1">{action}</div>}
         </div>
 
-        <PageHeaderStage images={images} className="order-2 w-full lg:order-1 lg:basis-2/3" />
+        <PageHeaderStage
+          images={images}
+          variant={fullHeight ? "full" : "compact"}
+          className="w-full"
+        />
       </div>
     </header>
   );

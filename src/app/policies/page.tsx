@@ -21,8 +21,8 @@ export default function Page() {
             src: "/about4.png",
             alt: "Two hands with a soft nude gel manicure and thin gold rings",
           },
-          { src: "/home1.png", alt: "Hands with long almond nails in nude and soft pink" },
           { src: "/home2.png", alt: "A hand with a peach manicure holding a dried palm leaf" },
+          { src: "/home1.png", alt: "Hands with long almond nails in nude and soft pink" },
         ]}
       />
       <PolicyLede />

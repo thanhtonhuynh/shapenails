@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <PageHeader
+        fullHeight
         title="Shape Nails"
         tone="warmsand"
         tagline="Shaping stories through stunning nails"
@@ -21,7 +22,7 @@ export default function Home() {
         }
         images={[
           { src: "/home1.png", alt: "Hands with long almond nails in nude and soft pink" },
-          { src: "/home2.png", alt: "A hand with a peach manicure holding a dried palm leaf" },
+          { src: "/about2.png", alt: "Two hands with long nude almond nails and a slim gold ring" },
           {
             src: "/services2.png",
             alt: "A hand with white almond nails reflected in a vanity mirror",

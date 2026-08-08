@@ -2,7 +2,7 @@ import { SeasonalCarousel } from "../seasonal-carousel";
 
 export function SeasonalCollection() {
   return (
-    <section className="bg-ivory flex flex-col gap-8 p-8 px-4 pb-16 sm:px-8">
+    <section className="bg-ivory flex flex-col gap-8 px-4 pt-20 pb-16 sm:px-8 md:pt-28">
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-center text-2xl tracking-widest uppercase md:text-3xl">
           Spring Awakening Collection

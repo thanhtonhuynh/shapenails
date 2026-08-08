@@ -171,6 +171,10 @@
 
   --clip-ellipse-sm: ellipse(85% 95% at 50% 0%);
   --clip-ellipse: ellipse(100% 95% at 50% 0%);
+
+  /* Page headers: same dome, dropping just shy of the bottom edge. */
+  --clip-dome-sm: ellipse(85% 98% at 50% 0%);
+  --clip-dome: ellipse(100% 98% at 50% 0%);
 }
 
 @layer base {
