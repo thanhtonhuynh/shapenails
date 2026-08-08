@@ -25,20 +25,14 @@ export const paymentMethods: {
   { title: "Cash App", icon: SiCashapp },
 ];
 
-export const nailArtPolicy = {
-  id: "nail-art",
-  title: "Nail Art (Design)",
-  smsHref: "sms:+18579998268",
-  smsLabel: "Text (857) 999-8268",
-  lead: "Our online booking system lists Nail Art (Design) as a $50 / 1 hour service. That price and time are a placeholder so we know you would like nail art. The final price and appointment length depend on the complexity of the design.",
-  points: [
-    "Nail art must be booked together with a base service such as Gel Manicure, Builder Gel, Gel-X, Dip, or Acrylic.",
-    "We do not add nail art to nails done by another salon without performing a new base service first.",
-    "After booking, text us a photo or description of the design you want. We will review it, give you an estimated price, and adjust your appointment time if needed.",
-  ],
+/** Nail art is the one clause that asks the client to do something. */
+export const nailArtSms = {
+  href: "sms:+18579998268",
+  label: "Text (857) 999-8268",
 };
 
-const bookingPolicies: Policy[] = [
+/** Rendered as numbered clauses, in the order they appear in docs/salon-policy.md. */
+export const policies: Policy[] = [
   {
     id: "appointments",
     title: "Appointments",
@@ -48,6 +42,24 @@ const bookingPolicies: Policy[] = [
         text: "Please arrive on time. Clients arriving more than 10 minutes late may be asked to reschedule or have their service adjusted, depending on the remaining available time.",
       },
       { text: "Walk-in clients are welcome based on salon availability." },
+    ],
+  },
+  {
+    id: "deposits",
+    title: "Deposits",
+    points: [
+      {
+        text: "A deposit of $50 or 50% of the service total may be required for:",
+        details: [
+          "Services totaling over $100.",
+          "Services that require extended appointment time.",
+          "Group appointments.",
+        ],
+      },
+      { text: "Deposits are applied toward your final service balance." },
+      {
+        text: "Deposits are non-refundable, but may be transferred to another appointment if at least 24 hours’ notice is provided.",
+      },
     ],
   },
   {
@@ -86,30 +98,23 @@ const bookingPolicies: Policy[] = [
     ],
   },
   {
-    id: "deposits",
-    title: "Deposits",
-    points: [
-      {
-        text: "A deposit of $50 or 50% of the service total may be required for:",
-        details: [
-          "Services totaling over $100.",
-          "Services that require extended appointment time.",
-          "Group appointments.",
-        ],
-      },
-      { text: "Deposits are applied toward your final service balance." },
-      {
-        text: "Deposits are non-refundable, but may be transferred to another appointment if at least 24 hours’ notice is provided.",
-      },
-    ],
-  },
-];
-
-const salonPolicies: Policy[] = [
-  {
     id: "payment",
     title: "Payment",
     points: [{ text: "Payment is due immediately after completion of services." }],
+  },
+  {
+    id: "service-guarantee",
+    title: "Service Guarantee",
+    points: [
+      {
+        text: "If you experience any service-related issue, such as lifting, chipping, or a workmanship concern, please contact us within 7 days of your appointment.",
+      },
+      { text: "Complimentary repairs are provided for workmanship-related issues only." },
+      {
+        text: "Repairs do not apply to damage caused by accidents, improper use, or other factors beyond our control.",
+      },
+      { text: "No refunds are issued for completed services." },
+    ],
   },
   {
     id: "pricing",
@@ -127,17 +132,21 @@ const salonPolicies: Policy[] = [
     ],
   },
   {
-    id: "service-guarantee",
-    title: "Service Guarantee",
+    id: "nail-art",
+    title: "Nail Art (Design)",
     points: [
       {
-        text: "If you experience any service-related issue, such as lifting, chipping, or a workmanship concern, please contact us within 7 days of your appointment.",
+        text: "Our online booking system lists Nail Art (Design) as a $50 / 1 hour service. That price and time are a placeholder so we know you would like nail art. The final price and appointment length depend on the complexity of the design.",
       },
-      { text: "Complimentary repairs are provided for workmanship-related issues only." },
       {
-        text: "Repairs do not apply to damage caused by accidents, improper use, or other factors beyond our control.",
+        text: "Nail art must be booked together with a base service such as Gel Manicure, Builder Gel, Gel-X, Dip, or Acrylic.",
       },
-      { text: "No refunds are issued for completed services." },
+      {
+        text: "We do not add nail art to nails done by another salon without performing a new base service first.",
+      },
+      {
+        text: "After booking, text us a photo or description of the design you want. We will review it, give you an estimated price, and adjust your appointment time if needed.",
+      },
     ],
   },
   {
@@ -163,13 +172,4 @@ const salonPolicies: Policy[] = [
       },
     ],
   },
-];
-
-/** Rendered as two independent columns on desktop, stacked in order on mobile. */
-export const policyColumns: Policy[][] = [bookingPolicies, salonPolicies];
-
-/** Anchor targets in the order they appear on the page. */
-export const policyJumpLinks = [
-  { id: nailArtPolicy.id, title: nailArtPolicy.title },
-  ...policyColumns.flat().map(({ id, title }) => ({ id, title })),
 ];
