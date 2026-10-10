@@ -17,7 +17,7 @@ export const dippingPowder: Category = {
     { title: "Gel-X Removal", price: 10 },
     { title: "Acrylic Removal", price: 15 },
 
-    { title: "French Tips", price: 10 },
+    { title: "French Tips", price: 15 },
     { title: "Cat Eye", price: 15 },
     { title: "Extension", price: 15 },
     { title: "Ombre", price: 20 },
