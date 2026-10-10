@@ -23,7 +23,7 @@ export const biabGel: Category = {
     { title: "Cat Eye", price: 15 },
     { title: "Acrylic Removal", price: 15 },
     { title: "Chrome", price: 20 },
-    { title: "French Tips", price: 15 },
+    { title: "French Tips", price: 20 },
     { title: "Ombre", price: 20 },
   ],
 };
