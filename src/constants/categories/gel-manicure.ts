@@ -22,11 +22,12 @@ export const gelManicure: Category = {
     { title: "Nail Strengthening", price: 5 },
     { title: "BIAB Removal", price: 10 },
     { title: "Dip Removal", price: 10 },
-    { title: "Gel-X Removal", price: 10 },
+    { title: "Gel-X Removal", price: 15 },
 
-    { title: "Cat Eye", price: 10 },
-    { title: "French Tips", price: 10 },
-    { title: "Chrome", price: 15 },
+    { title: "Cat Eye", price: 15 },
+    { title: "French Tips", price: 15 },
     { title: "Acrylic Removal", price: 15 },
+    { title: "Chrome", price: 20 },
+    { title: "Ombre", price: 20 },
   ],
 };

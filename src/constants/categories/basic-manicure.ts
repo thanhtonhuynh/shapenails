@@ -36,7 +36,7 @@ export const basicManicure: Category = {
     { title: "Gel Removal", price: 5 },
     { title: "BIAB Removal", price: 15 },
     { title: "Dip Removal", price: 15 },
-    { title: "Gel-X Removal", price: 15 },
+    { title: "Gel-X Removal", price: 20 },
     { title: "Acrylic Removal", price: 20 },
   ],
 };

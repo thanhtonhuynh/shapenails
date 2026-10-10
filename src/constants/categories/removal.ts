@@ -27,7 +27,7 @@ export const removal: Category = {
     },
     {
       title: "Gel-X",
-      price: 20,
+      price: 25,
       pricePlus: true,
     },
     {

@@ -6,7 +6,7 @@ export const biabGel: Category = {
     "A high-performance, builder gel designed to reinforce and protect natural nails. BIAB acts as both a strengthening base and a builder, promoting natural nail growth while preventing breakage and peeling. Its self-leveling formula creates a flawless, smooth finish with a natural-looking thickness, making it perfect for clients who prefer a durable yet flexible overlay. BIAB is ideal for those seeking long-lasting, chip-resistant wear with a glossy or matte finish. It can be worn alone for a natural look or as a base for gel polish, ensuring stronger, healthier nails over time.",
   services: [
     {
-      title: "Full Set",
+      title: "Overlay",
       price: 70,
       pricePlus: true,
     },
